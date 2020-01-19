@@ -8,6 +8,6 @@
 
     </head>
     <body>
-   <?php asset('img/Artboard1.svg')?>
+   <img src="\public\img\Artboard1.svg" alt="">
     </body>
 </html>
