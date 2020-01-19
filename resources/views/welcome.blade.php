@@ -9,6 +9,6 @@
     </head>
     <body>
 
-<img src="{{asset('public\img\Artboard1.svg')}}">
+<img src="{{asset('img/Artboard 1.png')}}">
     </body>
 </html>
