@@ -8,6 +8,7 @@
 
     </head>
     <body>
-   <img src="\public\img\Artboard1.svg" alt="">
+
+<img src="{{asset('public\img\Artboard1.svg')}}">
     </body>
 </html>
