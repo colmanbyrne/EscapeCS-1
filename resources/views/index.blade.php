@@ -9,15 +9,15 @@
     </head>
     <body>
     <div class="grid-container">
-  <div class="grid-item"><a href=" "><img src="img/SVG/Asset 2.svg"> alt=""></div>
+  <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 2.svg" alt=""></div>
   <div class="grid-item"></div>
-  <div class="grid-item"><img src="img/SVG/Asset 3.svg"  alt=""></div>
-  <div class="grid-item"><img src="img/SVG/Asset 4.svg" alt=""></div>
+  <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 3.svg" alt=""></div>
+  <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 4.svg" alt=""></div>
   <div class="grid-item"></div>
-  <div class="grid-item"><img src="img/SVG/Asset 5.svg" alt=""></div>
-  <div class="grid-item"><img src="img/SVG/Asset 6.svg" alt=""></div>
+  <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 5.svg" alt=""></div>
+  <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 6.svg" alt=""></div>
   <div class="grid-item"></div>
-  <div class="grid-item"><img src="img/SVG/Asset 7.svg" alt=""></div>
+  <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 7.svg" alt=""></div>
 </div>
 
     </body>
