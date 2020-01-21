@@ -13,9 +13,7 @@ html {
   grid-template-rows:33.3% 33.3% 33.3%;
   
 }
-a{
-  
-}
+
 a img {
   object-fit: contain;
   width: 100%;
