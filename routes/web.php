@@ -13,3 +13,7 @@
 
 Route::get('/', 'PagesController@index');
 Route::get('/logicInfo', 'PagesController@logicInfo');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
