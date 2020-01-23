@@ -11,8 +11,7 @@
 |
 */
 
-Route::get('/', 'PagesController@index');
-Route::get('/logicInfo', 'PagesController@logicInfo');
+
 
 Auth::routes();
 
