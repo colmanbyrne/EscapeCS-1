@@ -29,7 +29,13 @@ class HomeController extends Controller
         DB::table('users')
         ->where('id', Auth::id())
         ->update(['started' =>Carbon::now()]);
-       
+
+        $date = Carbon::now();
+$carbon_date = Carbon::parse($date);
+$carbon_date->addHours(1);
+        session()->put('start', $carbon_date);
+        
+        
        return view('home');
     }
     public function logicInfo(){
