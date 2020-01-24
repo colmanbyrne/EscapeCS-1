@@ -19,9 +19,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('css')
+
     <script>
-       
-       
+
+
        //gets current time = +d.getTime();;
         var countDownDate= new Date( <?php echo '"'.session('start').'"' ; ?> ).getTime();
 // Update the count down every 1 second

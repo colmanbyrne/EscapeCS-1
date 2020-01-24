@@ -15,18 +15,18 @@
                     @endif
 
                     <div class="grid-container">
-  <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 2.svg" alt=""></a></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"><a href="/logicP"><img src="img/SVG/Asset 3.svg" alt=""></a></div>
-  <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 5.svg" alt=""></a></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 6.svg" alt=""/></a></div>
-  <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 4.svg" alt=""/></a></div>
-  <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 7.svg" alt=""></a></div>
-</div>
+                        <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 2.svg" alt=""></a></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"><a href="/logicP"><img src="img/SVG/Asset 3.svg" alt=""></a></div>
+                        <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 5.svg" alt=""></a></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 6.svg" alt=""/></a></div>
+                        <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 4.svg" alt=""/></a></div>
+                        <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 7.svg" alt=""></a></div>
+                    </div>
 
-    </body>
+
                 </div>
             </div>
         </div>

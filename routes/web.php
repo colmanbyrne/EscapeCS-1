@@ -18,4 +18,5 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/startGame', 'HomeController@startGame')->name('startGame');
 Route::get('/logicInfo', 'HomeController@logicInfo')->name('logicInfo');
-Route::get('/logicP', 'HomeController@logicP')->name('logicP');
+Route::get('/assembler', 'HomeController@assembler')->name('assembler');
+Route::get('/instructionset', 'HomeController@instructionset')->name('instructionset');
