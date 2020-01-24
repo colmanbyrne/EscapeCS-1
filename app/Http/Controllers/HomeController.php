@@ -26,20 +26,24 @@ class HomeController extends Controller
     public function index()
     {
         
-        DB::table('users')
-        ->where('id', Auth::id())
-        ->update(['started' =>Carbon::now()]);
+        //DB::table('users')
+        //->where('id', Auth::id())
+        //->update(['started' =>Carbon::now()]);
 
         $date = Carbon::now();
 $carbon_date = Carbon::parse($date);
 $carbon_date->addHours(1);
+if(session('start')==null){
         session()->put('start', $carbon_date);
-        
+}
         
        return view('home');
     }
     public function logicInfo(){
         return view('logicInfo');
+    }
+    public function logicP(){
+        return view('logicP');
     }
    
 }

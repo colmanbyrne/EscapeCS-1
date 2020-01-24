@@ -18,4 +18,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/startGame', 'HomeController@startGame')->name('startGame');
 Route::get('/logicInfo', 'HomeController@logicInfo')->name('logicInfo');
-
+Route::get('/logicP', 'HomeController@logicP')->name('logicP');
