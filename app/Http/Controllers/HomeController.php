@@ -62,6 +62,10 @@ class HomeController extends Controller
     public function c (){
         return view('c');
     }
+    public function logicPA(){
+      echo  $_POST["inputvalue1"];
 
+        //return view('logicP',$Data);
+    }
 
 }

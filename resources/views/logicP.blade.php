@@ -16,9 +16,12 @@
 
                     <h1>Logic P</h1>
     <img src="img/SVG/SVG/Asset 1.svg" alt="">
-    
+
+    <form action="/logicPA" method="post">
     <input type="text" class="form-control" id="inputvalue1" placeholder="Input Value">
     <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
     </body>
                 </div>
             </div>
