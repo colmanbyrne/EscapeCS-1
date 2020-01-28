@@ -52,7 +52,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col text-center">
-                                        <a class="btn btn-primary" href="http://escapecs/instructionset" role="button">Machine code Instruction Set</a>
+                                        <a class="btn btn-primary" href="/instructionset" role="button">Machine code Instruction Set</a>
                                       </div>
 
                                 </div>

@@ -50,6 +50,15 @@ class HomeController extends Controller
     public function instructionset(){
         return view('instructionset');
     }
+    public function logicP(){
+        return view('logicP');
+    }
+    public function binaryHex(){
+        return view('binaryHex');
+    }
+    public function decomp (){
+        return view('Decomposition ');
+    }
 
 
 }

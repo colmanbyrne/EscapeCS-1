@@ -16,9 +16,7 @@
 
                     <h1>Logic P</h1>
     <img src="img/SVG/SVG/Asset 1.svg" alt="">
-    {{ Form::open(array('url' => 'foo/bar')) }}
-    //
-{{ Form::close() }}
+    
    
 
     </body>

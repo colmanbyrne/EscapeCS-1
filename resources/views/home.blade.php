@@ -14,19 +14,19 @@
                         </div>
                     @endif
 
-                    <div class="grid-container">
-                        <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 2.svg" alt=""></a></div>
-                        <div class="grid-item"></div>
-                        <div class="grid-item"><a href="/logicP"><img src="img/SVG/Asset 3.svg" alt=""></a></div>
-                        <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 5.svg" alt=""></a></div>
-                        <div class="grid-item"></div>
-                        <div class="grid-item"></div>
-                        <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 6.svg" alt=""/></a></div>
-                        <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 4.svg" alt=""/></a></div>
-                        <div class="grid-item"><a href="/logicInfo"><img src="img/SVG/Asset 7.svg" alt=""></a></div>
-                    </div>
-
-
+                    <a href="/logicInfo">Logic Info</a>
+                    <br>
+                    <a href="/logicP">Logic Puzzle</a>
+                    <br>
+                    <a href="/binaryHex">Binary Hex Info</a>
+                    <br>
+                    <a href="/assembler">Assembler Puzzle</a>
+                    <br>
+                    <a href="/c">C Puzzle</a>
+                    <br>
+                    <a href="/java">Java Puzzle</a>
+                    <br>
+                    <a href="/decomp">Decompisition</a>
                 </div>
             </div>
         </div>
