@@ -16,7 +16,7 @@
 
                    
     int main() {    
-        int number1, number2, sum;
+        int number1=<input type="text" class="form-control" id="inputvalue1" placeholder="Input Value">, number2=<input type="text" class="form-control" id="inputvalue1" placeholder="Input Value">, sum;
         
         printf("Enter two integers: ");
         scanf("%d %d", &number1, &number2);
