@@ -9,20 +9,23 @@
 
                 <div class="card-body">
                     @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
                     @endif
 
                     <h1>Logic P</h1>
-    <img src="img/SVG/SVG/Asset 1.svg" alt="">
+                    <img src="img/SVG/SVG/Asset 1.svg" alt="">
+                    {{ $result }}
+                    <?php
+                    
+                    echo Form::open(array('route' => 'logicPA'));
+                    echo Form::text('inputvalue1');
+                    echo Form::submit('Click Me!');
+                    ?>
 
-    <form action="/logicPA" method="post">
-    <input type="text" class="form-control" id="inputvalue1" placeholder="Input Value">
-    <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
 
-    </body>
+                    </body>
                 </div>
             </div>
         </div>
