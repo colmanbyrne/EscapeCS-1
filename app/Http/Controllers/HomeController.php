@@ -57,7 +57,10 @@ class HomeController extends Controller
         return view('binaryHex');
     }
     public function decomp (){
-        return view('Decomposition ');
+        return view('decomposition ');
+    }
+    public function c (){
+        return view('c');
     }
 
 

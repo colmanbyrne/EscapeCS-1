@@ -14,12 +14,18 @@
                         </div>
                     @endif
 
-                    <h1>Logic P</h1>
-    <img src="img/SVG/SVG/Asset 1.svg" alt="">
-    
-    <input type="text" class="form-control" id="inputvalue1" placeholder="Input Value">
-    <button type="submit" class="btn btn-primary">Submit</button>
-    </body>
+                   
+    int main() {    
+        int number1, number2, sum;
+        
+        printf("Enter two integers: ");
+        scanf("%d %d", &number1, &number2);
+        // calculating sum
+        sum = number1 + number2;      
+        
+        printf("%d + %d = %d", number1, number2, sum);
+        return 0;
+    }
                 </div>
             </div>
         </div>

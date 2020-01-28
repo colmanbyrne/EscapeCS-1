@@ -22,4 +22,5 @@ Route::get('/logicP', 'HomeController@logicP')->name('logicP');
 Route::get('/binaryHex', 'HomeController@binaryHex')->name('binaryHex');
 Route::get('/assembler', 'HomeController@assembler')->name('assembler');
 Route::get('/decomp', 'HomeController@decomp')->name('decomp');
+Route::get('/c', 'HomeController@c')->name('c');
 Route::get('/instructionset', 'HomeController@instructionset')->name('instructionset');
