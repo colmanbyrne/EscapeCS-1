@@ -1,5 +1,29 @@
 @extends('layouts.app')
+<style>
+.gridTable2{
+ 
+ display: grid;
+ grid-template-columns:10% 10% 10% ;
+ grid-template-rows:auto ;
+ 
+}
+.gridTable{
 
+ display: grid;
+ grid-template-columns:10% 10% 10% ;
+ grid-template-rows:auto;
+}
+
+.gridData{
+ font-size: 150%;
+ border: 1px solid black;
+ text-align: center;
+ padding: 1%;
+}
+
+
+
+</style>
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

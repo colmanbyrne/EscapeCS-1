@@ -15,17 +15,17 @@
                     @endif
 
                    
-    int main() {    
-        int number1=<input type="text" class="form-control" id="inputvalue1" placeholder="Input Value">, number2=<input type="text" class="form-control" id="inputvalue1" placeholder="Input Value">, sum;
+    <p>int main() {    </p>
+        <p>  int number1, number2, sum; </p>
         
-        printf("Enter two integers: ");
-        scanf("%d %d", &number1, &number2);
-        // calculating sum
-        sum = number1 + number2;      
+        <p>   printf("Enter two integers: "); </p>
+        <p>   scanf("%d %d", &number1, &number2); </p>
+        <p>   // calculating sum </p>
+        <p>   sum = number1 + number2;     </p>  
         
-        printf("%d + %d = %d", number1, number2, sum);
-        return 0;
-    }
+        <p>    printf("%d + %d = %d", number1, number2, sum); </p>
+        <p>    return 0; </p>
+        <p>  } </p>
                 </div>
             </div>
         </div>

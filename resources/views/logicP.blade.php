@@ -1,5 +1,11 @@
 @extends('layouts.app')
+<style>
+.io{
+    text-align: center;
+}
 
+
+</style>
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -16,19 +22,20 @@
 
                     <h1>Logic P</h1>
                     <img src="img/SVG/SVG/Asset 1.svg" alt="">
-                    {{ $result }}
+                    <div class="io">
+                    {{ $result ?? '' }}
                     <?php
-                    
+
                     echo Form::open(array('route' => 'logicPA'));
                     echo Form::text('inputvalue1');
                     echo Form::submit('Click Me!');
                     ?>
-
-
-                    </body>
                 </div>
+
+                </body>
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection

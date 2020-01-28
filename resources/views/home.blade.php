@@ -13,7 +13,11 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
+<p>This website is a hostage</p>
+<p>Programmers fail to appreciate how lucky they are standing on the shoulders of giants, men who coded every step in their programmes</p>
+<p>You have no idea how easy it is for you now memory allocation stackoverflows ha your greatest worry is incorporating cheats to speed up "productivity" </p>
+<p>Ineffecient mindless saps learn your past to move forward</p>
+<p>You will have to look back to move on</p>
                     <a href="/logicInfo">Logic Info</a>
                     <br>
                     <a href="/logicP">Logic Puzzle</a>
