@@ -14,6 +14,7 @@
                         </div>
                     @endif
 
+procedural with pointers
                    
     <p>int main() {    </p>
         <p>  int number1, number2, sum; </p>

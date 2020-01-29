@@ -23,19 +23,19 @@
 
                                 <div class="well">
                                     <div class="form-group row">
-                                        <label for="inputvalue1" class="col-sm-3 col-form-label">1. LDA    #</label>
+                                        <label for="inputvalue1" class="col-sm-4 col-form-label">1. LDA A  #$0</label>
                                         <div class="col-sm-2">
                                           <input type="text" class="form-control" id="inputvalue1" placeholder="Input Value">
                                         </div>
                                       </div>
 
-                                      2. LDB #0x02<br>
+                                      2. LDA B #$02<br>
                                       3. ABA<br>
-                                      4. STA A , #0x001a<br>
+                                      4. STA A , #$001a<br>
                                       <div class="form-group row">
-                                        <label for="inputvalue2" class="col-sm-7 col-form-label">Content of memory at #0x001a</label>
+                                        <label for="inputvalue2" class="col-sm-7 col-form-label">Content of memory at #$001a</label>
                                         <div class="col-sm-2">
-                                          <input type="text" class="form-control" id="inputvalue2" placeholder="Input Value">
+                                          <input type="text" class="form-control" id="inputvalue2" placeholder="Input Value">d
                                         </div>
                                       </div>
                                       <button type="submit" class="btn btn-primary">Submit</button>
