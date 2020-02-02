@@ -66,6 +66,10 @@ class HomeController extends Controller
     {
         return view('decomposition ');
     }
+    public function jvsc()
+    {
+        return view('decomposition ');
+    }
     public function c()
     {
         return view('c');
@@ -88,20 +92,20 @@ class HomeController extends Controller
         $input =  $_POST["inputvalue1"];
         $input2 =  $_POST["inputvalue2"];
         $result = [
-            'repsonse1' => '',
+            'response1' => '',
             'response2' => ''
         ];
 
         if ($input == "B") {
            $result[0]="Looks like your getting it others solved it faster are you sure this is for you ??";
         } else {
-            $result[0]="I dont know what your entering but it aint right";
+            $result[0]="I dont know what your entering but it aint right , try using something logcal";
         }
 
         if ($input == "D") {
             $result[1]="Boom!!! well done that was a tough one im suprised";
          } else {
-             $result[0]="I dont know what your entering but it aint right";
+             $result[0]="Do you really understand this ?? I left instructions laying around somewhere.";
          }
 
         return view('assembler')->with($result);

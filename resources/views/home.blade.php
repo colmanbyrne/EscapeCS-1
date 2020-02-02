@@ -31,6 +31,8 @@
                     <a href="/java">Java Puzzle</a>
                     <br>
                     <a href="/decomp">Decompisition</a>
+                    <br>
+                    <a href="/jvsc">Java vs C</a>
                 </div>
             </div>
         </div>

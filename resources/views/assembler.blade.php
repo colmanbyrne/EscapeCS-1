@@ -17,11 +17,13 @@
                     <?php
                     echo Form::open(array('route' => 'assemblerPA')); ?>
                     1. LDA A #$0
+                    {{ $result[response1] ?? '' }}
                     <?php echo Form::text('inputvalue1'); ?><br>
                     2. LDA B #$02<br>
                     3. ABA<br>
                     4. STA A , #$001a<br>
-                    So what is the Content at memory #$001a ?
+                    So what is the Content at memory #$001a ?<br>
+                    {{ $result[response2] ?? '' }}
                     <?php echo Form::text('inputvalue2');
 
                     echo Form::submit('Click Me!');
