@@ -29,6 +29,8 @@
                     echo Form::open(array('route' => 'logicPA'));
                     echo Form::text('inputvalue1');
                     echo Form::submit('Click Me!');
+
+                    echo Form::close()
                     ?>
                 </div>
 

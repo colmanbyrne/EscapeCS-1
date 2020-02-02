@@ -82,4 +82,29 @@ class HomeController extends Controller
             return view('logicP')->with('result', 'Ha not very logical are you, your gonna have to learn the basics first');
         }
     }
+    public function assemblerPA()
+    {
+
+        $input =  $_POST["inputvalue1"];
+        $input2 =  $_POST["inputvalue2"];
+        $result = [
+            'repsonse1' => '',
+            'response2' => ''
+        ];
+
+        if ($input == "B") {
+           $result[0]="Looks like your getting it others solved it faster are you sure this is for you ??";
+        } else {
+            $result[0]="I dont know what your entering but it aint right";
+        }
+
+        if ($input == "D") {
+            $result[1]="Boom!!! well done that was a tough one im suprised";
+         } else {
+             $result[0]="I dont know what your entering but it aint right";
+         }
+
+        return view('assembler')->with($result);
+
+    }
 }

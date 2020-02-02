@@ -24,4 +24,5 @@ Route::get('/assembler', 'HomeController@assembler')->name('assembler');
 Route::get('/decomp', 'HomeController@decomp')->name('decomp');
 Route::get('/c', 'HomeController@c')->name('c');
 Route::post('/logicPA', 'HomeController@logicPA')->name('logicPA');
+Route::post('/assemblerPA', 'HomeController@assemblerPA')->name('assemblerPA');
 Route::get('/instructionset', 'HomeController@instructionset')->name('instructionset');
