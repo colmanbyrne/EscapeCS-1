@@ -97,18 +97,18 @@ class HomeController extends Controller
         ];
 
         if ($input == "B") {
-           $result[0]="Looks like your getting it others solved it faster are you sure this is for you ??";
+           $result['response1']="Looks like your getting it others solved it faster are you sure this is for you ??";
         } else {
-            $result[0]="I dont know what your entering but it aint right , try using something logcal";
+            $result['response1']="I dont know what your entering but it aint right , try using something logcal";
         }
 
-        if ($input == "D") {
-            $result[1]="Boom!!! well done that was a tough one im suprised";
+        if ($input2 == "D") {
+            $result['response2']="Boom!!! well done that was a tough one im suprised";
          } else {
-             $result[0]="Do you really understand this ?? I left instructions laying around somewhere.";
+             $result['response2']="Do you really understand this ?? I left instructions laying around somewhere.";
          }
 
-        return view('assembler')->with($result);
+        return view('assembler')->with('result',$result);
 
     }
 }

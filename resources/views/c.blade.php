@@ -14,19 +14,14 @@
                         </div>
                     @endif
 
-procedural with pointers
-                   
-    <p>int main() {    </p>
-        <p>  int number1, number2, sum; </p>
-        
-        <p>   printf("Enter two integers: "); </p>
-        <p>   scanf("%d %d", &number1, &number2); </p>
-        <p>   // calculating sum </p>
-        <p>   sum = number1 + number2;     </p>  
-        
-        <p>    printf("%d + %d = %d", number1, number2, sum); </p>
-        <p>    return 0; </p>
-        <p>  } </p>
+                    <div class="cMemory">
+    <div class="gridData">col1</div>
+    <div class="gridData">col2</div>
+    <div class="gridData">col3</div>
+    <div class="gridData">0100</div>
+    <div class="gridData">010a</div>
+    <div class="gridData">010b</div>
+    </div>
                 </div>
             </div>
         </div>
