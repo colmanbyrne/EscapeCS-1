@@ -33,74 +33,71 @@ float: left;
                     </div>
                     @endif
 
-                    public class Test {
+                    public class Test {</br>
 
-/**
- * @param args the command line arguments
- */
-public static void main(String[] args) {
-    Animal animal1=new Animal("Male",6,"Tim");
-    Animal animal2=new Animal("Female",4,"David");
+public static void main(String[] args) {</br>
+    Animal animal1=new Animal("Male",6,"Tim");</br>
+    Animal animal2=new Animal("Female",4,"David");</br>
     
-    animal2.setAge(animal1.getAge()+1);
+    animal2.setAge(animal1.getAge()+1);</br>
     
-    animal2.Random();
-    System.out.println(animal2.getAge()+animal2.getAge());
+    animal2.Random();</br>
+    System.out.println(animal2.getAge()+animal2.getAge());</br>
 
-}
-
-
-
-}
+}</br>
 
 
 
-public class Animal {
-    String gender;
-    int age;
-    String name;
+}</br>
 
-    public Animal() {
+</br></br>
+
+public class Animal {</br>
+    String gender;</br>
+    int age;</br>
+    String name;</br>
+
+    public Animal() {</br>
         
-    }
+    }</br>
 
-    public Animal(String gender, int age, String name) {
-        this.gender = gender;
-        this.age = age;
-        this.name = name;
-    }
+    public Animal(String gender, int age, String name) {</br>
+        this.gender = gender;</br>
+        this.age = age;</br>
+        this.name = name;</br>
+    }</br>
 
-    public String getGender() {
-        return gender;
-    }
+    public String getGender() {</br>
+        return gender;</br>
+    }</br>
 
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
+    public void setGender(String gender) {</br>
+        this.gender = gender;</br>
+    }</br>
 
-    public int getAge() {
-        return age;
-    }
+    public int getAge() {</br>
+        return age;</br>
+    }</br>
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+    public void setAge(int age) {</br>
+        this.age = age;</br>
+    }</br>
 
-    public String getName() {
-        return name;
-    }
+    public String getName() {</br>
+        return name;</br>
+    }</br>
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setName(String name) {</br>
+        this.name = name;</br>
+    }</br>
     
-    public void Random(){
-        if(age<4){
-            age=4000;
-        }
-        else if(age>4){
-            age=250;
-        }
+    public void Random(){</br>
+        if(age<4{</br>
+            age=4000;</br>
+        }</br>
+        else if(age>4){</br>
+            age=250;</br>
+        }</br>
         
     }
 }
