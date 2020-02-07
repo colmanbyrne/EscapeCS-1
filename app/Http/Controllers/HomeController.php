@@ -126,11 +126,21 @@ class HomeController extends Controller
     public function javaPA()
     {
         $input =  $_POST["inputvalue1"];
+        $input2 =  $_POST["inputvalue2"];
+
         if ($input == "256") {
-            $result="Objectivley you have done it but im not happy about it. Fine its over this is the code to unlock the Website ";
+            $result['response1']="Objectivley you have done it but im not happy about it. Fine its over this is the code to unlock the Website ";
          } else {
-             $result="Objectivley your wrong very very wrong and you wer so close as well ,times running out";
+            $result['response1']="Objectivley your wrong very very wrong and you wer so close as well ,times running out";
          }
+
+         if ($input2 == "0x33") {
+            $result['response2']="Ok you can c but can you be objective enough to get to the end";
+           
+         } else {
+            $result['response2']="you will need to c the right answer before moving to this problem";
+         }
+
         return view('java')->with('result',$result);
     }
 }

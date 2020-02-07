@@ -13,7 +13,8 @@
                         {{ session('status') }}
                     </div>
                     @endif
-
+                    <?php
+                    echo Form::open(array('route' => 'javaPA')); ?>
                     public class Test {</br>
 
 public static void main(String[] args) {</br>
@@ -21,8 +22,8 @@ public static void main(String[] args) {</br>
     Animal animal2=new Animal("Female",4,"David");</br>
     
     animal2.setAge(animal1.getAge()+1);</br>
-    
-    animal2.Random(///////////////////////////////////);</br>
+   
+    animal2.Random( <?php echo Form::text('inputvalue2'); ?>); {{ $result['response2'] ?? '' }} </br>
     System.out.println(animal2.getAge()+animal2.getAge());</br>
 
 }</br>
@@ -87,8 +88,7 @@ public class Animal {</br>
     }</br>
 }</br>
 What is the output from System ?
-                    <?php
-                    echo Form::open(array('route' => 'javaPA')); ?>
+                  
                     
                     <?php echo Form::text('inputvalue1'); ?><br>
                    
@@ -98,5 +98,5 @@ What is the output from System ?
 
                     echo Form::close()
                     ?>
-                     {{ $result ?? '' }}      
+                     {{ $result['response1'] ?? '' }}     
                 </div> </div> </div> </div> </div> @endsection

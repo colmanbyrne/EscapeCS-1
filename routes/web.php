@@ -29,4 +29,5 @@ Route::post('/javaPA', 'HomeController@javaPA')->name('javaPA');
 Route::post('/logicPA', 'HomeController@logicPA')->name('logicPA');
 Route::post('/assemblerPA', 'HomeController@assemblerPA')->name('assemblerPA');
 Route::post('/cPA', 'HomeController@cPA')->name('cPA');
+Route::post('/final', 'HomeController@final')->name('final');
 Route::get('/instructionset', 'HomeController@instructionset')->name('instructionset');
