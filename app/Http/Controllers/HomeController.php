@@ -123,4 +123,14 @@ class HomeController extends Controller
          }
         return view('c')->with('result',$result);
     }
+    public function javaPA()
+    {
+        $input =  $_POST["inputvalue1"];
+        if ($input == "256") {
+            $result="Objectivley you have done it but im not happy about it. Fine its over this is the code to unlock the Website ";
+         } else {
+             $result="Objectivley your wrong very very wrong and you wer so close as well ,times running out";
+         }
+        return view('c')->with('result',$result);
+    }
 }

@@ -1,24 +1,5 @@
 @extends('layouts.app')
-<style>
-    .cMemory {
-        width :50%;
-float: left;
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        grid-template-rows: auto;
-    }
 
-    .gridData {
-        font-size: 150%;
-        border: 1px solid black;
-        text-align: center;
-        padding: 1%;
-    }
-    .code{
-        width :50%;
-        float: right;
-    }
-</style>
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -99,8 +80,19 @@ public class Animal {</br>
             age=250;</br>
         }</br>
         
-    }
-}
-
+    }</br>
+}</br>
+What is the output from System ?
+                    <?php
+                    echo Form::open(array('route' => 'javaPA')); ?>
+                    
+                    <?php echo Form::text('inputvalue1'); ?><br>
                    
+                    <?php 
+
+                    echo Form::submit('Click Me!');
+
+                    echo Form::close()
+                    ?>
+                     {{ $result ?? '' }}      
                 </div> </div> </div> </div> </div> @endsection
