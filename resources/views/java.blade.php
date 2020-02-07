@@ -73,11 +73,15 @@ public class Animal {</br>
     }</br>
     
     public void Random(){</br>
-        if(age<4{</br>
-            age=4000;</br>
-        }</br>
-        else if(age>4){</br>
-            age=250;</br>
+        switch (input) {</br>
+            case "Ox33":</br>
+                 age = 250;</br>
+                break;</br>
+            case "Ox34":</br>
+                 age = 4000;</br>
+                break;</br>
+            default:</br>
+        
         }</br>
         
     }</br>

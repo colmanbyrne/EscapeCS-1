@@ -131,6 +131,6 @@ class HomeController extends Controller
          } else {
              $result="Objectivley your wrong very very wrong and you wer so close as well ,times running out";
          }
-        return view('c')->with('result',$result);
+        return view('java')->with('result',$result);
     }
 }
