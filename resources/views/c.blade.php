@@ -1,8 +1,8 @@
 @extends('layouts.app')
 <style>
     .cMemory {
-        width :50%;
-float: left;
+        width: 50%;
+        float: left;
         display: grid;
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: auto;
@@ -14,8 +14,9 @@ float: left;
         text-align: center;
         padding: 1%;
     }
-    .code{
-        width :50%;
+
+    .code {
+        width: 50%;
         float: right;
     }
 </style>
@@ -101,50 +102,34 @@ float: left;
 
                     </div>
                     <div class="code">
-                        // This pointer will hold the<br>
-                        // base address of the block created<br>
-                        int* ptr;<br>
-                        int n, i;<br>
-                        int x.y;<br>
-                        int *ptr2;<br>
+                        int i;</br>
+                        int n;</br>
+                        int *ptr;</br>
+                        int y;</br>
+                        int x;</br>
+                        int *ptr2;</br>
 
-                      
-                        // Get the number of elements for the array<br>
-                        n = 5;<br>
-                        printf("Enter number of elements: %d\n", n);<br>
-                      
-                        // Dynamically allocate memory using calloc()<br>
-                        ptr = (int*)calloc(n, sizeof(int));<br>
-                      
-                        // Check if the memory has been successfully<br>
-                        // allocated by calloc or not<br>
-                        if (ptr == NULL) {<br>
-                            printf("Memory not allocated.\n");<br>
-                            exit(0);<br>
-                        }<br>
-                        else {<br>
-                      
-                            // Memory has been successfully allocated<br>
-                            printf("Memory successfully allocated using calloc.\n");<br>
-                      
-                            // Get the elements of the array<br>
-                            for (i = 0; i < n; ++i) {<br>
-                                     ptr[i]=i + 1;         } <br>
-                            *ptr2=x + y + ptr[2];  <br>
-                           }   <br>
-                           return 0; } <br> 
+                        y=10;</br>
+                        <?php echo Form::open(array('route' => 'cPA'));?>
+                        x=<?php echo Form::text('inputvalue1'); ?>;<br>
+
+                        ptr= (int*)malloc(n * sizeof(int));</br>
+
+                         for (i = 0; i < n; ++i) {</br>
+                                         ptr[i]=i + 1;         } </br>
+                             ptr2=(int*)malloc(2 * sizeof(int));</br>
+                              *ptr2=x + y + ptr[2]; </br>
+                              </div> What is the content of *ptr2 ? 
+                             
+                              <?php
+                            echo Form::text('inputvalue2');
+                            echo Form::submit('Click Me!');
+
+                            echo Form::close()
+                            ?>
+                            {{ $result ?? '' }}
                     </div>
-                    What is the content of *ptr2 ?
-                    <?php
-                    echo Form::open(array('route' => 'cPA')); ?>
-                    
-                    <?php echo Form::text('inputvalue1'); ?><br>
-                   
-                    <?php 
-
-                    echo Form::submit('Click Me!');
-
-                    echo Form::close()
-                    ?>
-                     {{ $result ?? '' }}
-                </div> </div> </div> </div> </div> @endsection
+                </div>
+            </div>
+        </div>
+    </div> @endsection
