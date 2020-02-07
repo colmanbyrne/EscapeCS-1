@@ -27,9 +27,7 @@ class HomeController extends Controller
     public function index()
     {
 
-        //DB::table('users')
-        //->where('id', Auth::id())
-        //->update(['started' =>Carbon::now()]);
+       
 
         $date = Carbon::now();
         $carbon_date = Carbon::parse($date);
@@ -68,7 +66,7 @@ class HomeController extends Controller
     }
     public function jvsc()
     {
-        return view('decomposition ');
+        return view('jVSc ');
     }
     public function c()
     {
@@ -110,5 +108,15 @@ class HomeController extends Controller
 
         return view('assembler')->with('result',$result);
 
+    }
+    public function cPA()
+    {
+        $input =  $_POST["inputvalue1"];
+        if ($input == "0x33") {
+            $result="Looks like your beginning to c clearly ,im impressed maybe you do understand";
+         } else {
+             $result="Are you wearing your glasses ? you will have to learn to c memory clearly for this one";
+         }
+        return view('c')->with('result',$result);
     }
 }

@@ -26,4 +26,5 @@ Route::get('/jvsc', 'HomeController@jvsc')->name('jvsc');
 Route::get('/c', 'HomeController@c')->name('c');
 Route::post('/logicPA', 'HomeController@logicPA')->name('logicPA');
 Route::post('/assemblerPA', 'HomeController@assemblerPA')->name('assemblerPA');
+Route::post('/cPA', 'HomeController@cPA')->name('cPA');
 Route::get('/instructionset', 'HomeController@instructionset')->name('instructionset');

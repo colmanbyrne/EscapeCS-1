@@ -40,11 +40,11 @@ float: left;
 
                         <div class="gridData">0x072</div>
                         <div class="gridData"></div>
-                        <div class="gridData"></div>
+                        <div class="gridData">Unallocated</div>
 
                         <div class="gridData">0x071</div>
                         <div class="gridData"></div>
-                        <div class="gridData"></div>
+                        <div class="gridData">Unallocated</div>
 
                         <div class="gridData">0x070</div>
                         <div class="gridData"></div>
@@ -134,4 +134,17 @@ float: left;
                            }   <br>
                            return 0; } <br> 
                     </div>
+                    What is the content of *ptr2 ?
+                    <?php
+                    echo Form::open(array('route' => 'cPA')); ?>
+                    
+                    <?php echo Form::text('inputvalue1'); ?><br>
+                   
+                    <?php 
+
+                    echo Form::submit('Click Me!');
+
+                    echo Form::close()
+                    ?>
+                     {{ $result ?? '' }}
                 </div> </div> </div> </div> </div> @endsection
