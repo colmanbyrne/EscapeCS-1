@@ -22,7 +22,7 @@ public static void main(String[] args) {</br>
     
     animal2.setAge(animal1.getAge()+1);</br>
     
-    animal2.Random();</br>
+    animal2.Random(///////////////////////////////////);</br>
     System.out.println(animal2.getAge()+animal2.getAge());</br>
 
 }</br>
