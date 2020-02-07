@@ -116,10 +116,18 @@ class HomeController extends Controller
     public function cPA()
     {
         $input =  $_POST["inputvalue1"];
-        if ($input == "0x33") {
-            $result="Looks like your beginning to c clearly ,im impressed maybe you do understand";
+        $input2 =  $_POST["inputvalue2"];
+
+        if ($input == "20") {
+            $result['response1']="well u know how to go from one page to another following instructions ,well done";
          } else {
-             $result="Are you wearing your glasses ? you will have to learn to c memory clearly for this one";
+            $result['response1']="can you not even follow simple instructions ?";
+         }
+
+        if ($input2 == "0x33") {
+            $result['response2']="Looks like your beginning to c clearly ,im impressed maybe you do understand";
+         } else {
+            $result['response2']="Are you wearing your glasses ? you will have to learn to c memory clearly for this one";
          }
         return view('c')->with('result',$result);
     }

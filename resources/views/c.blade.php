@@ -111,25 +111,25 @@
 
                         y=10;</br>
                         <?php echo Form::open(array('route' => 'cPA'));?>
-                        x=<?php echo Form::text('inputvalue1'); ?>;<br>
+                        x=<?php echo Form::text('inputvalue1'); ?>;{{ $result['response1'] ?? '' }}   </br>
 
                         ptr= (int*)malloc(n * sizeof(int));</br>
 
                          for (i = 0; i < n; ++i) {</br>
-                                         ptr[i]=i + 1;         } </br>
+                        ptr[i]=i + 1;         } </br>
                              ptr2=(int*)malloc(2 * sizeof(int));</br>
                               *ptr2=x + y + ptr[2]; </br>
-                              </div> What is the content of *ptr2 ? 
                              
+                              What is the content of *ptr2 ? 
                               <?php
                             echo Form::text('inputvalue2');
                             echo Form::submit('Click Me!');
-
-                            echo Form::close()
+                            echo Form::close();
                             ?>
-                            {{ $result ?? '' }}
+                           {{ $result['response2'] ?? '' }}   
                     </div>
                 </div>
             </div>
         </div>
-    </div> @endsection
+    </div>
+</div> @endsection
