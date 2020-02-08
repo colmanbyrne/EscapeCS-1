@@ -155,4 +155,8 @@ class HomeController extends Controller
 
         return view('java')->with('result',$result);
     }
+    public function final()
+    {
+        return view('final');
+    }
 }
