@@ -22,10 +22,10 @@
                    <p> But then i also see this </p>
                     //////////////////////////
 
-                    Maybe there is hope if we can make it accessible to everyone maybe more will participate.
+                   <p> Maybe there is hope if we can make it accessible to everyone maybe more will participate.</p>
                     
 
-                    Anyway you have solved my little trials il turn your website back to normal when i get a chance ,im doing things the old ways it might take awhile.
+                    <p>Anyway you have solved my little trials il turn your website back to normal when i get a chance ,im doing things the old ways it might take awhile.</p>
                         
                 </div>
             </div>

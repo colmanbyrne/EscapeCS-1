@@ -157,6 +157,13 @@ class HomeController extends Controller
     }
     public function final()
     {
-        return view('final');
+        $input =  $_POST["inputvalue1"];
+        $input2 =  $_POST["inputvalue2"];
+        $input3 =  $_POST["inputvalue3"];
+        
+      if($input=="2"&&$input2=="5"&&$input3=="6"){
+            return view('final');
+        }
+       
     }
 }

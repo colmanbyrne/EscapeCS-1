@@ -41,8 +41,8 @@
                     echo Form::open(array('route' => 'final')); ?>
 
                     <?php echo Form::text('inputvalue1');
-                    echo Form::text('inputvalue1');
                     echo Form::text('inputvalue2');
+                    echo Form::text('inputvalue3');
                     
 
                     echo Form::submit('Click Me!');
