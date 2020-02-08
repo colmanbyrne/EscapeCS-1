@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 08, 2020 at 04:54 PM
+-- Generation Time: Feb 08, 2020 at 07:18 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -724,7 +724,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `updated_at`, `created_at`, `remember_token`, `started`) VALUES
-(2, 'David', 'davidbyrneit@gmail.com', '$2y$10$cEawkLSpyFnYaXkLCxT.xukoBGfT5TVX3tmsXfsOyddWkjVCHjy0G', '2020-01-23 00:25:24', '2020-01-23 00:25:24', NULL, '2020-01-24 11:29:21');
+(2, 'David', 'davidbyrneit@gmail.com', '$2y$10$cEawkLSpyFnYaXkLCxT.xukoBGfT5TVX3tmsXfsOyddWkjVCHjy0G', '2020-01-23 00:25:24', '2020-01-23 00:25:24', NULL, '2020-01-24 11:29:21'),
+(3, 'bla', 'david.byrne@lit.ie', '$2y$10$dB7aOKSKcpVK4t/Ir8BdluoVDszhiz9QFlv2/8tZRw0JTilMif4w6', '2020-02-08 17:58:37', '2020-02-08 17:58:37', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -951,7 +952,7 @@ ALTER TABLE `sequences`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
