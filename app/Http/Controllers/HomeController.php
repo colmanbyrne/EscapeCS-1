@@ -72,6 +72,10 @@ class HomeController extends Controller
     {
         return view('c');
     }
+    public function cInfo()
+    {
+        return view('cInfo');
+    }
     public function java()
     {
         return view('java');

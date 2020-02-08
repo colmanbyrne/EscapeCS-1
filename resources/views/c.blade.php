@@ -52,7 +52,7 @@
                         <div class="gridData">ptr2[1]</div>
 
                         <div class="gridData">0x06F</div>
-                        <div class="gridData">0x33</div>
+                        <div class="gridData"></div>
                         <div class="gridData">ptr2[0]</div>
 
                         <div class="gridData">0x06E</div>

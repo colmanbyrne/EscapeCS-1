@@ -26,6 +26,8 @@
                     <br>
                     <a href="/assembler">Assembler Puzzle</a>
                     <br>
+                    <a href="/cInfo">C Info</a>
+                    <br>
                     <a href="/c">C Puzzle</a>
                     <br>
                     <a href="/java">Java Puzzle</a>
