@@ -80,7 +80,7 @@
                         <div class="gridData">ptr2</div>
 
                         <div class="gridData">0x068</div>
-                        <div class="gridData">0x14</div>
+                        <div class="gridData"></div>
                         <div class="gridData">x</div>
 
                         <div class="gridData">0x067</div>

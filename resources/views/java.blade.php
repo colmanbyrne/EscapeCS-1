@@ -24,7 +24,7 @@ public static void main(String[] args) {</br>
     animal2.setAge(animal1.getAge()+1);</br>
    
     animal2.Random( <?php echo Form::text('inputvalue2'); ?>); {{ $result['response2'] ?? '' }} </br>
-    System.out.println(animal2.getAge()+animal2.getAge());</br>
+    System.out.println(animal2.getAge()+animal1.getAge());</br>
 
 }</br>
 
@@ -73,12 +73,12 @@ public class Animal {</br>
         this.name = name;</br>
     }</br>
     
-    public void Random(){</br>
+    public void Random(String input){</br>
         switch (input) {</br>
-            case "Ox33":</br>
+            case "0x1b":</br>
                  age = 250;</br>
                 break;</br>
-            case "Ox34":</br>
+            case "0x34":</br>
                  age = 4000;</br>
                 break;</br>
             default:</br>
