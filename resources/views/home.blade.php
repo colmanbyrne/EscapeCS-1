@@ -1,5 +1,9 @@
 @extends('layouts.app')
-
+<style>
+#response{
+color: blueviolet
+}
+    </style>
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -18,6 +22,11 @@
                     <p>You have no idea how easy it is for you now memory allocation stackoverflows ha your greatest worry is incorporating cheats to speed up "productivity" </p>
                     <p>Ineffecient mindless saps learn your past to move forward</p>
                     <p>You will have to look back to move on</p>
+
+                    <div id="response">  {{ $result ?? '' }}</div>
+</br>
+<?php echo session('puzzle'); ?>
+</br>
                     <a href="/logicInfo">Logic Info</a>
                     <br>
                     <a href="/logicP">Logic Puzzle</a>
