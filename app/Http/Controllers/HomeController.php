@@ -105,7 +105,7 @@ class HomeController extends Controller
         if ($input == "B") {
            $result['response1']="Looks like your getting it others solved it faster are you sure this is for you ??";
         } else {
-            $result['response1']="I dont know what your entering but it aint right , try using something logcal";
+            $result['response1']="I dont know what your entering but it aint right , try using something logical";
         }
 
         if ($input2 == "D") {

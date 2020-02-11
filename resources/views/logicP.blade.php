@@ -3,7 +3,9 @@
 .io{
     text-align: center;
 }
-
+#response{
+color: blueviolet
+}
 
 </style>
 @section('content')
@@ -21,9 +23,9 @@
                     @endif
 
                     <h1>Logic P</h1>
-                    <img src="img/SVG/SVG/Asset 1.svg" alt="">
+                    <img src="img\LogicP\SVG\Asset 1.svg" alt="">
                     <div class="io">
-                    {{ $result ?? '' }}
+                    <div id="response">  {{ $result ?? '' }}</div>
                     <?php
 
                     echo Form::open(array('route' => 'logicPA'));
