@@ -56,27 +56,79 @@
 
                     <br>
 
+                    
+                    <a href="/binaryHex">Binary Hex Info</a>
+                   
+                    <br>
+
                     <?php
                     if (session('puzzle') > 1) {
                         echo "<s>";
                     }
                     ?>
-                    <a href="/binaryHex">Binary Hex Info</a>
+                    <a href="/assembler">Assembler Puzzle</a>
                     <?php
-                    if (session('puzzle') != 0) {
+                    if (session('puzzle') >1) {
                         echo "</s>";
                     }
                     ?>
+
                     <br>
-                    <a href="/assembler">Assembler Puzzle</a>
-                    <br>
+
+                    <?php
+                    if (session('puzzle') > 2) {
+                        echo "<s>";
+                    }
+                    ?>
                     <a href="/cInfo">C Info</a>
+                    <?php
+                    if (session('puzzle') >2) {
+                        echo "</s>";
+                    }
+                    ?>
+
                     <br>
+
+                    <?php
+                    if (session('puzzle') > 2) {
+                        echo "<s>";
+                    }
+                    ?>
                     <a href="/c">C Puzzle</a>
+                    <?php
+                    if (session('puzzle') >2) {
+                        echo "</s>";
+                    }
+                    ?>
+
                     <br>
+
+                    <?php
+                    if (session('puzzle') == 4) {
+                        echo "<s>";
+                    }
+                    ?>
                     <a href="/javaInfo">Java Info</a>
+                    <?php
+                    if (session('puzzle') ==4) {
+                        echo "</s>";
+                    }
+                    ?>
+
                     <br>
+
+                    <?php
+                    if (session('puzzle')== 4) {
+                        echo "<s>";
+                    }
+                    ?>
                     <a href="/java">Java Puzzle</a>
+                    <?php
+                    if (session('puzzle') ==4) {
+                        echo "</s>";
+                    }
+                    ?>
+
                     <br>
 
                     <a href="/decomp">Decompisition</a>
