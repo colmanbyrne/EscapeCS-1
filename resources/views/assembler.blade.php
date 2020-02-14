@@ -20,12 +20,10 @@ color: blueviolet
                     @endif
                     <?php
                     echo Form::open(array('route' => 'assemblerPA')); ?>
-                    1. LDA A #$
-                    <div id="response">{{ $result['response1'] ?? '' }}</div>
-                    <?php echo Form::text('inputvalue1'); ?><br>
+                    1. LDA A #$<?php echo Form::text('inputvalue1'); ?><br><div id="response">{{ $result['response1'] ?? '' }}</div>
                     2. LDA B #$2<br>
                     3. ABA<br>
-                    4. STA A , #$001a<br>
+                    4. STA A , #$001A<br>
                     So what is the Content at memory #$001a ?<br>
                     <div id="response">{{ $result['response2'] ?? '' }}</div>
                     <?php echo Form::text('inputvalue2');

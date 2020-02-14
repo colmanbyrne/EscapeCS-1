@@ -1,5 +1,18 @@
 @extends('layouts.app')
 <style>
+
+pre, code {
+    font-family: monospace, monospace;
+}
+pre {
+    overflow: auto;
+}
+pre > code {
+    display: block;
+    padding: 1rem;
+    word-wrap: normal;
+}
+
     .cMemory {
         width: 50%;
         float: left;
@@ -23,12 +36,13 @@
   color: blueviolet
   }
 </style>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header"></div>
+                <div class="card-header"> C Program</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -105,32 +119,41 @@
 
                     </div>
                     <div class="code">
-                        int i;</br>
-                        int n;</br>
-                        int *ptr;</br>
-                        int y;</br>
-                        int x;</br>
-                        int *ptr2;</br>
-
-                        y=10;</br>
+                        <pre class="prettyprint">
+                        <code>
+                #include stdio.h
+                int main() {
+                        int i;
+                        int n;
+                        int *ptr;
+                        int y;
+                        int x;
+                        int *ptr2;
+                        y=10;
                         <?php echo Form::open(array('route' => 'cPA'));?>
-                        x=<?php echo Form::text('inputvalue1'); ?><div id="response">{{ $result['response1'] ?? '' }} ;</div>  </br>
+                        x=<?php echo Form::text('inputvalue1'); ?>;<div id="response">{{ $result['response1'] ?? '' }}</div>
 
-                        ptr= (int*)malloc(n * sizeof(int));</br>
+                        ptr= (int*)malloc(n * sizeof(int));
 
-                         for (i = 0; i < n; ++i) {</br>
-                        ptr[i]=i + 1;         } </br>
-                             ptr2=(int*)malloc(2 * sizeof(int));</br>
-                              *ptr2=x + y + ptr[2]; </br>
-                             
-                              What is the content of *ptr2 ? 
-                              <?php
+                        for (i = 0; i < n; ++i) {
+                            ptr[i]=i + 1;         
+                        }
+                        ptr2=(int*)malloc(2 * sizeof(int));
+                        *ptr2=x + y + ptr[2];
+
+                }
+
+                              What is the content of *ptr2 ?
+                            <?php
                             echo Form::text('inputvalue2');
                             echo Form::submit('Click Me!');
                             echo Form::close();
                             ?>
                           <div id="response"> {{ $result['response2'] ?? '' }}   </div>
                     </div>
+
+</code>
+</pre>
                 </div>
             </div>
         </div>
