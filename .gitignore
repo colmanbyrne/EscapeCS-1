@@ -13,3 +13,4 @@ yarn-error.log
 config/database.php
 storage/csescape.sql
 config/database.php
+dbpassword
