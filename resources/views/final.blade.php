@@ -27,6 +27,16 @@
 
                     <p>Anyway you have solved my little trials il turn your website back to normal when i get a chance ,im doing things the old ways it might take awhile.</p>
                         
+
+                    <?php echo Form::open(array('route' => 'feedback'));
+                       
+                       echo Form::label('input2', 'E-Mail Address');
+                            echo Form::text('input2');
+                            echo Form::label('input1', 'Comments');
+                            echo Form::textarea('input1');
+                            echo Form::submit('Click Me!');
+                            echo Form::close();
+                            ?>
                 </div>
             </div>
         </div>

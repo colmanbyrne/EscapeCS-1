@@ -180,4 +180,15 @@ class HomeController extends Controller
             return view('final');
         }
     }
+    public function feedback()
+    {
+        $input =  $_POST["input1"];
+        $input2 =  $_POST["input2"];
+        $date = Carbon::now();
+        DB::table('feedback')->insert(
+            ['Email' =>$input2 , 'Date' => $date, 'Comment' => $input]
+        );
+        return view('home');
+        
+    }
 }

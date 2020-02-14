@@ -1,9 +1,9 @@
 @extends('layouts.app')
 <style>
-#response{
-color: blueviolet
-}
-    </style>
+    #response {
+        color: blueviolet
+    }
+</style>
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -23,23 +23,50 @@ color: blueviolet
                     <p>Ineffecient mindless saps learn your past to move forward</p>
                     <p>You will have to look back to move on</p>
 
-                    <div id="response">  {{ $result ?? '' }}</div>
-</br>
-<?php echo session('puzzle'); ?>
-</br>
-<?php 
+                    <div id="response"> {{ $result ?? '' }}</div>
+                    </br>
+                    <?php echo session('puzzle'); ?>
+                    </br>
 
-
-
-
-
-
-?>
+                    <?php
+                    if (session('puzzle') != 0) {
+                        echo "<s>";
+                    }
+                    ?>
                     <a href="/logicInfo">Logic Info</a>
+                    <?php
+                    if (session('puzzle') != 0) {
+                        echo "</s>";
+                    }
+                    ?>
+
                     <br>
+
+                    <?php
+                    if (session('puzzle') != 0) {
+                        echo "<s>";
+                    }
+                    ?>
                     <a href="/logicP">Logic Puzzle</a>
+                    <?php
+                    if (session('puzzle') != 0) {
+                        echo "</s>";
+                    }
+                    ?>
+
                     <br>
+
+                    <?php
+                    if (session('puzzle') > 1) {
+                        echo "<s>";
+                    }
+                    ?>
                     <a href="/binaryHex">Binary Hex Info</a>
+                    <?php
+                    if (session('puzzle') != 0) {
+                        echo "</s>";
+                    }
+                    ?>
                     <br>
                     <a href="/assembler">Assembler Puzzle</a>
                     <br>
@@ -63,13 +90,13 @@ color: blueviolet
                     <?php echo Form::text('inputvalue1');
                     echo Form::text('inputvalue2');
                     echo Form::text('inputvalue3');
-                    
+
 
                     echo Form::submit('Click Me!');
 
                     echo Form::close()
                     ?>
-                    
+
                 </div>
             </div>
         </div>

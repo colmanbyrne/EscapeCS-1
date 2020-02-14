@@ -33,3 +33,4 @@ Route::post('/assemblerPA', 'HomeController@assemblerPA')->name('assemblerPA');
 Route::post('/cPA', 'HomeController@cPA')->name('cPA');
 Route::post('/final', 'HomeController@final')->name('final');
 Route::get('/instructionset', 'HomeController@instructionset')->name('instructionset');
+Route::post('/feedback', 'HomeController@feedback')->name('feedback');
