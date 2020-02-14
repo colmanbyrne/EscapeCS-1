@@ -69,7 +69,7 @@ color: blueviolet
 
                     echo Form::close()
                     ?>
-                    {{ $result ?? '' }}
+                    
                 </div>
             </div>
         </div>

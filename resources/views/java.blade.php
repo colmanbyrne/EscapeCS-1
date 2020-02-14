@@ -1,5 +1,9 @@
 @extends('layouts.app')
-
+<style>
+#response{
+  color: blueviolet
+  }
+    </style>
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -23,7 +27,7 @@ public static void main(String[] args) {</br>
     
     animal2.setAge(animal1.getAge()+1);</br>
    
-    animal2.Random( <?php echo Form::text('inputvalue2'); ?>); {{ $result['response2'] ?? '' }} </br>
+    animal2.Random( <?php echo Form::text('inputvalue2'); ?>);<div id="response"> {{ $result['response2'] ?? '' }}</div> </br>
     System.out.println(animal2.getAge()+animal1.getAge());</br>
 
 }</br>
@@ -98,5 +102,5 @@ What is the output from System ?
 
                     echo Form::close()
                     ?>
-                     {{ $result['response1'] ?? '' }}     
+                   <div id="response">   {{ $result['response1'] ?? '' }}     </div>
                 </div> </div> </div> </div> </div> @endsection

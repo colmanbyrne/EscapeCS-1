@@ -19,6 +19,9 @@
         width: 50%;
         float: right;
     }
+    #response{
+  color: blueviolet
+  }
 </style>
 @section('content')
 <div class="container">
@@ -111,7 +114,7 @@
 
                         y=10;</br>
                         <?php echo Form::open(array('route' => 'cPA'));?>
-                        x=<?php echo Form::text('inputvalue1'); ?>;{{ $result['response1'] ?? '' }}   </br>
+                        x=<?php echo Form::text('inputvalue1'); ?><div id="response">{{ $result['response1'] ?? '' }} ;</div>  </br>
 
                         ptr= (int*)malloc(n * sizeof(int));</br>
 
@@ -126,7 +129,7 @@
                             echo Form::submit('Click Me!');
                             echo Form::close();
                             ?>
-                           {{ $result['response2'] ?? '' }}   
+                          <div id="response"> {{ $result['response2'] ?? '' }}   </div>
                     </div>
                 </div>
             </div>
