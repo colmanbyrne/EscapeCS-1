@@ -116,11 +116,12 @@ class HomeController extends Controller
             $result['response1'] = "I dont know what your entering but it aint right , try using something logical";
         }
 
-        if ($input2 == "D") {
-            return view('home')->with('result', 'Boom!!! well done that was a tough one im suprised');
+        if ($input2 == "D"||$input2 == "d") {
+           
             if (session('puzzle') == 1) {
                 session()->put('puzzle', 2);
             }
+            return view('home')->with('result', 'Boom!!! well done that was a tough one im suprised');
         } else {
             $result['response2'] = "Do you really understand this ?? I left instructions laying around somewhere.";
         }
