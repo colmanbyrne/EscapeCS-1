@@ -56,22 +56,39 @@
 
                     <br>
 
+                    
+                    <a href="/binaryHex">Binary Hex Info</a>
+                   
+                    <br>
+
+                    <?php
+                    if (session('puzzle') > 0) {
+                        echo "<s>";
+                    }
+                    ?>
+                    <a href="/assembler">Assembler Puzzle</a>
+                    <?php
+                    if (session('puzzle') >0) {
+                        echo "</s>";
+                    }
+                    ?>
+                    
+                    <br>
+
                     <?php
                     if (session('puzzle') > 1) {
                         echo "<s>";
                     }
                     ?>
-                    <a href="/binaryHex">Binary Hex Info</a>
+                    <a href="/cInfo">C Info</a>
                     <?php
-                    if (session('puzzle') != 0) {
+                    if (session('puzzle') >1) {
                         echo "</s>";
                     }
                     ?>
+
                     <br>
-                    <a href="/assembler">Assembler Puzzle</a>
-                    <br>
-                    <a href="/cInfo">C Info</a>
-                    <br>
+
                     <a href="/c">C Puzzle</a>
                     <br>
                     <a href="/javaInfo">Java Info</a>
