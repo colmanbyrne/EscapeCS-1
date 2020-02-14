@@ -27,6 +27,14 @@ color: blueviolet
 </br>
 <?php echo session('puzzle'); ?>
 </br>
+<?php 
+
+
+
+
+
+
+?>
                     <a href="/logicInfo">Logic Info</a>
                     <br>
                     <a href="/logicP">Logic Puzzle</a>
@@ -39,8 +47,11 @@ color: blueviolet
                     <br>
                     <a href="/c">C Puzzle</a>
                     <br>
+                    <a href="/javaInfo">Java Info</a>
+                    <br>
                     <a href="/java">Java Puzzle</a>
                     <br>
+
                     <a href="/decomp">Decompisition</a>
                     <br>
                     <a href="/jvsc">Java vs C</a>

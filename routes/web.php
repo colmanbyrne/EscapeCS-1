@@ -25,6 +25,7 @@ Route::get('/decomp', 'HomeController@decomp')->name('decomp');
 Route::get('/jvsc', 'HomeController@jvsc')->name('jvsc');
 Route::get('/c', 'HomeController@c')->name('c');
 Route::get('/cInfo', 'HomeController@cInfo')->name('cInfo');
+Route::get('/javaInfo', 'HomeController@javaInfo')->name('javaInfo');
 Route::get('/java', 'HomeController@java')->name('java');
 Route::post('/javaPA', 'HomeController@javaPA')->name('javaPA');
 Route::post('/logicPA', 'HomeController@logicPA')->name('logicPA');
