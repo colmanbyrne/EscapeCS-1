@@ -24,7 +24,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header"></div>
+                <div class="card-header">Home</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -32,25 +32,26 @@
                         {{ session('status') }}
                     </div>
                     @endif
-                    <p>This website is a hostage</p>
-                    <p>Programmers fail to appreciate how lucky they are standing on the shoulders of giants, men who coded every step in their programmes</p>
-                    <p>You have no idea how easy it is for you now memory allocation stackoverflows ha your greatest worry is incorporating cheats to speed up "productivity" </p>
-                    <p>Ineffecient mindless saps learn your past to move forward</p>
-                    <p>You will have to look back to move on</p>
+                    <h2>This website is a hostage</h2>
+                    <p style="font-size:18px;">Programmers fail to appreciate how lucky they are standing on the shoulders of giants, men who coded every step in their programmes.</p>
+                    <p style="font-size:18px;">You have no idea how easy it is for you now memory allocation stackoverflows ha your greatest worry is incorporating cheats to speed up "productivity". </p>
+                    <p style="font-size:18px;">Ineffecient mindless saps learn your past to move forward. You will have to look back to move on.</p>
 
                     <div id="response"> {{ $result ?? '' }}</div>
+                    <!--
                     <br>
                     <?php echo session('puzzle'); ?>
                     <br>
+                    -->
 
-                    <?php
-                    if (session('puzzle') != 0) {
-                        echo "<s>";
-                    }
-                    ?>
                     <div class="cMemory">
                         <div class="gridData"></div>
                         <div class="gridData">
+                            <?php
+                            if (session('puzzle') != 0) {
+                            echo "<s>";
+                            }
+                            ?>
                             <a href="/logicInfo">Logic Info</a>
                             <?php
                             if (session('puzzle') != 0) {
