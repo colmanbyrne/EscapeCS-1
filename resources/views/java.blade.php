@@ -46,7 +46,7 @@ public class Test {
         Animal animal1=new Animal("Male",6,"Tim");
         Animal animal2=new Animal("Female",4,"David");
         animal2.setAge(animal1.getAge()+1);
-        animal2.Random( <?php echo Form::text('inputvalue2'); ?>);<div id="response"> {{ $result['response2'] ?? '' }}</div>
+        animal2.Random( <?php echo Form::text('inputvalue2'); ?>);<div id="response"><span class="nocode"> {{ $result['response2'] ?? '' }}</span></div>
         System.out.println(animal2.getAge()+animal1.getAge());
 
     }

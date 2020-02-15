@@ -135,7 +135,7 @@ li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
                         int *ptr2;
                         y=10;
 
-                        x=<?php echo Form::text('inputvalue1');?>;<div id="response">{{ $result['response1'] ?? '' }}</div>
+                        x=<?php echo Form::text('inputvalue1');?>;<div id="response"><span class="nocode"> {{ $result['response1'] ?? '' }}</span></div>
 
                         ptr= (int*)malloc(n * sizeof(int));
 
