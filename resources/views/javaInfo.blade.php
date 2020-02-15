@@ -1,11 +1,30 @@
 @extends('layouts.app')
 
+<style>
+    pre, code {
+    font-family: monospace, monospace;
+}
+pre {
+    overflow: auto;
+}
+pre > code {
+    display: block;
+    padding: 1rem;
+    word-wrap: normal;
+}
+li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
+     list-style-type: decimal !important;
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header"></div>
+                <div class="card-header">Java Language</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -13,24 +32,31 @@
                         {{ session('status') }}
                     </div>
                     @endif
-                    Java is an object-oriented programming language.
+                    <div>
 
-Everything in Java is associated with classes and objects, along with its attributes and methods. For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake.
+                    Java is an object-oriented programming language. <br>
+                    <ul>
 
-A Class is like an object constructor, or a "blueprint" for creating objects.
+                        <li>Everything in Java is associated with classes and objects, along with its attributes and methods. </li>
+                        <ul>
+                        <li>For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake.</li>
+                        </ul>
+                        <li>A Class is like an object constructor, or a "blueprint" for creating objects.</li>
+                        <li>A method is a block of code which only runs when it is called.</li>
+                        <li>You can pass data, known as parameters, into a method.</li>
+                        <li>Methods are used to perform certain actions, and they are also known as functions.</li>
+                        <ul>
+                        <li>Why use methods? To reuse code: define the code once, and use it many times.</li>
+                        </ul>
+                    </ul>
 
-</br>
-A method is a block of code which only runs when it is called.
+                    </div>
 
-You can pass data, known as parameters, into a method.
-
-Methods are used to perform certain actions, and they are also known as functions.
-
-Why use methods? To reuse code: define the code once, and use it many times.
-</br>
+<pre class="prettyprint linenums">
+    <code class="language-java">
 // Create a Car class
 public class Car {
- 
+
   // Create a fullThrottle() method
   public void fullThrottle() {
     System.out.println("The car is going as fast as it can!");
@@ -48,9 +74,14 @@ public class Car {
     myCar.speed(200);          // Call the speed() method
   }
 }
-result =The car is going as fast as it can!
-Max speed is: 200
-                        
+
+</code>
+</pre>
+<ul>
+<li>Result =The car is going as fast as it can!</li>
+<li>Max speed is: 200</li>
+</ul>
+
                 </div>
             </div>
         </div>
