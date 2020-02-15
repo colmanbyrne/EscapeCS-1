@@ -1,4 +1,5 @@
 @extends('layouts.app')
+
 <style>
     pre, code {
     font-family: monospace, monospace;
@@ -34,8 +35,8 @@ pre > code {
                     <?php
                     echo Form::open(array('route' => 'javaPA')); ?>
 
-<pre class="prettyprint">
-    <code>
+<pre class="prettyprint linenums">
+    <code class="language-java">
 public class Test {
 
     public static void main(String[] args) {

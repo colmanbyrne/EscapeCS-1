@@ -119,7 +119,7 @@ pre > code {
 
                     </div>
                     <div class="code">
-                        <pre class="prettyprint">
+                        <pre class="prettyprint linenums">
                         <code>
                 #include stdio.h
                 int main() {
