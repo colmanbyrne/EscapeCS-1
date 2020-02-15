@@ -9,7 +9,7 @@ color: blueviolet
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header"> Machine Code - Assembler</div>
+                <div class="card-header"> Machine Code - Assembler<div class="float-md-right"><a href="/" class="btn btn-primary" role="button">Home</a></div></div>
 
                 <div class="card-body">
                     <h5 class="card-title">Machine code Program</h5>
@@ -35,9 +35,9 @@ color: blueviolet
 
                     <img src="{{ URL::to('/img/MC6800_Processor_Diagram.png') }}"><br>
 
-                    Machine Code is one level above Binary, and is the fastest method to execute a software program. All programs are translated by compilers to machine code before execution. All computers have state machine cores which have Accumulators, which is where the main mathematics takes place when doing calcualtions
-                    some are significantly more complex than other.
-                    The software is written in a language called Assembler , using memonics for the state machine operations as well as hexadeciaml for binary digits .
+                    Machine Code is one level above Binary, and is the fastest method to execute a software program. All programs are translated by compilers to machine code before execution. All computers have state machine cores which have Accumulators, which is where the main mathematics takes place when doing calculations
+                    some are significantly more complex than others.
+                    The software is written in a language called Assembler , using memonics for the state machine operations as well as hexadeciaml for binary digits .<br>
 
                     <a class="btn btn-primary" href="/instructionset" role="button">Machine code Instruction Set</a>
 

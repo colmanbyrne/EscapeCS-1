@@ -1,11 +1,11 @@
 @extends('layouts.app')
 <style>
 .gridTable2{
- 
+
  display: grid;
  grid-template-columns:10% 10% 10% ;
  grid-template-rows:auto ;
- 
+
 }
 .gridTable{
 
@@ -29,7 +29,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header"></div>
+                <div class="card-header">Logic Information<div class="float-md-right"><a href="/" class="btn btn-primary" role="button">Home</a></div></div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -39,7 +39,7 @@
                     @endif
 
                     <h1>Logic</h1>
-    
+
     <h2>NOT Gate</h2>
     <img src="img/SVG/g9607.svg" alt="">
      <p>The NOT gate is also known as an inverter because the output is the exact opposite of the input. It has one input and one output. The two possibilities are written out in the table below. Tables listing all logical possibilities like this are known as truth tables.</p>
@@ -72,7 +72,7 @@
     <div class="gridData">1</div>
     <div class="gridData">1</div>
     </div>
-    </br> 
+    </br>
     <h2>NAND Gate</h2>
     <img src="img/SVG/g9489.svg" alt="">
      <p>The NAND gate behaves in the opposite fashion to and AND gate. You can think of it as an AND gate followed immediately by a NOT gate. Its output is 0 when the two inputs are 1, and for all other cases, its output is 0. The name NAND comes from joining NOT and AND. The symbol for NAND is the same as that for AND except for the addition of a small circle on the right side.</p>
@@ -93,7 +93,7 @@
     <div class="gridData">1</div>
     <div class="gridData">0</div>
     </div>
-    </br>  
+    </br>
     <h2>OR Gate</h2>
     <img src="img/SVG/g9502.svg" alt="">
      <p>The OR gate has two inputs and one output. If at least one of the inputs is 1, then the output will be 1. If neither input is 1, the output will be 0.</p>
@@ -148,15 +148,15 @@
     <div class="gridData">0</div>
     <div class="gridData">1</div>
     <div class="gridData">0</div>
-    <div class="gridData">1</div>    
+    <div class="gridData">1</div>
     <div class="gridData">0</div>
     <div class="gridData">1</div>
-    <div class="gridData">1</div>  
     <div class="gridData">1</div>
     <div class="gridData">1</div>
-    <div class="gridData">0</div>  
+    <div class="gridData">1</div>
+    <div class="gridData">0</div>
     </div>
-    
+
 
     </body>
                 </div>

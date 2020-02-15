@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header"></div>
+                <div class="card-header">C Language<div class="float-md-right"><a href="/" class="btn btn-primary" role="button">Home</a></div></div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -32,7 +32,7 @@ Let’s say our computer has 4K of memory and the next open address is 2048. We 
                         char *p3 /*Pointer to a character variable*/</br>
                         float *p4 /*pointer to a float variable*/</br></p>
 
-                        
+
                 </div>
             </div>
         </div>

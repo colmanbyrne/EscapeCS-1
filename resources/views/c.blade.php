@@ -45,7 +45,7 @@ li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header"> C Program</div>
+                <div class="card-header"> C Program<div class="float-md-right"><a href="/" class="btn btn-primary" role="button">Home</a></div></div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -140,7 +140,7 @@ li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
                         ptr= (int*)malloc(n * sizeof(int));
 
                         for (i = 0; i < n; ++i) {
-                            ptr[i]=i + 1;         
+                            ptr[i]=i + 1;
                         }
                         ptr2=(int*)malloc(2 * sizeof(int));
                         *ptr2=x + y + ptr[2];

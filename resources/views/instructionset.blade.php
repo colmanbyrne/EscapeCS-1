@@ -9,7 +9,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header"> Machine Code - Assembler</div>
+                <div class="card-header"> Machine Code - Assembler<div class="float-md-right"><a href="/" class="btn btn-primary" role="button">Home</a></div></div>
                 <div class="card-body">
   <h1>6800 instruction set (6800 assembler)</h1>
 

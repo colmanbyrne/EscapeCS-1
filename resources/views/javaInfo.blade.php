@@ -24,7 +24,7 @@ li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Java Language</div>
+                <div class="card-header">Java Language<div class="float-md-right"><a href="/" class="btn btn-primary" role="button">Home</a></div></div>
 
                 <div class="card-body">
                     @if (session('status'))

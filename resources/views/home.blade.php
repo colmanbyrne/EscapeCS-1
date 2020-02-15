@@ -3,6 +3,21 @@
     #response {
         color: blueviolet
     }
+
+    .cMemory {
+        width: 100%;
+        float: left;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: auto;
+    }
+
+    .gridData {
+        font-size: 150%;
+        border: 0px solid black;
+        text-align: center;
+        padding: 1%;
+    }
 </style>
 @section('content')
 <div class="container">
@@ -24,22 +39,8 @@
                     <p>You will have to look back to move on</p>
 
                     <div id="response"> {{ $result ?? '' }}</div>
-                    </br>
+                    <br>
                     <?php echo session('puzzle'); ?>
-                    </br>
-
-                    <?php
-                    if (session('puzzle') != 0) {
-                        echo "<s>";
-                    }
-                    ?>
-                    <a href="/logicInfo">Logic Info</a>
-                    <?php
-                    if (session('puzzle') != 0) {
-                        echo "</s>";
-                    }
-                    ?>
-
                     <br>
 
                     <?php
@@ -47,93 +48,170 @@
                         echo "<s>";
                     }
                     ?>
-                    <a href="/logicP">Logic Puzzle</a>
-                    <?php
-                    if (session('puzzle') != 0) {
-                        echo "</s>";
-                    }
-                    ?>
+                    <div class="cMemory">
+                        <div class="gridData"></div>
+                        <div class="gridData">
+                            <a href="/logicInfo">Logic Info</a>
+                            <?php
+                            if (session('puzzle') != 0) {
+                            echo "</s>";
+                            }
+                            ?>
+
+                        </div>
+                        <div class="gridData"></div>
+
+                        <div class="gridData"></div>
+                        <div class="gridData"></div>
+                        <div class="gridData">
+                            <?php
+                                if (session('puzzle')== 4) {
+                                echo "<s>";
+                                }
+                            ?>
+                            <a href="/java">Java Puzzle</a>
+                            <?php
+                                if (session('puzzle') ==4) {
+                                echo "</s>";
+                                }
+                            ?>
+                        </div>
+
+                        <div class="gridData">
+                            <a href="/decomp">Decomposition</a>
+                        </div>
+                        <div class="gridData"></div>
+                        <div class="gridData"></div>
+
+                        <div class="gridData"></div>
+                        <div class="gridData">
+                            <a href="/binaryHex">Binary Hex Info</a>
+                        </div>
+                        <div class="gridData"></div>
+
+                        <div class="gridData"></div>
+                        <div class="gridData"></div>
+                        <div class="gridData"></div>
+
+                        <div class="gridData">
+
+                        </div>
+                        <div class="gridData">
+
+                        </div>
+                        <div class="gridData">
+                            <?php
+                            if (session('puzzle') > 2) {
+                                echo "<s>";
+                            }
+                            ?>
+                            <a href="/cInfo">C Info</a>
+                            <?php
+                            if (session('puzzle') >2) {
+                                echo "</s>";
+                            }
+                            ?>
+                        </div>
+
+                        <div class="gridData"></div>
+                        <div class="gridData">
+                            <a href="/jvsc">Java vs C</a>
+                        </div>
+                        <div class="gridData"></div>
+
+                        <div class="gridData"></div>
+                        <div class="gridData"></div>
+                        <div class="gridData"></div>
+
+                        <div class="gridData">
+                            <?php
+                            if (session('puzzle') > 1) {
+                                echo "<s>";
+                            }
+                            ?>
+                            <a href="/assembler">Assembler Puzzle</a>
+                            <?php
+                            if (session('puzzle') >1) {
+                                echo "</s>";
+                            }
+                            ?>
+                        </div>
+                        <div class="gridData"></div>
+                        <div class="gridData">
+                            <?php
+                            if (session('puzzle') > 2) {
+                            echo "<s>";
+                            }
+                            ?>
+                            <a href="/c">C Puzzle</a>
+                            <?php
+                            if (session('puzzle') >2) {
+                            echo "</s>";
+                            }
+                            ?>
+                        </div>
+
+                        <div class="gridData"></div>
+                        <div class="gridData">
+                            <?php
+                            if (session('puzzle') == 4) {
+                            echo "<s>";
+                            }
+                            ?>
+                            <a href="/javaInfo">Java Info</a>
+                            <?php
+                            if (session('puzzle') ==4) {
+                            echo "</s>";
+                            }
+                            ?>
+                        </div>
+                        <div class="gridData"></div>
+
+                        <div class="gridData"></div>
+                        <div class="gridData"></div>
+                        <div class="gridData">
+
+                        </div>
+
+                        <div class="gridData">
+                            <?php
+                            if (session('puzzle') != 0) {
+                                echo "<s>";
+                            }
+                            ?>
+
+                            <a href="/logicP">Logic Puzzle</a>
+                            <?php
+                            if (session('puzzle') != 0) {
+                                echo "</s>";
+                            }
+                            ?>
+                        </div>
+                        <div class="gridData"></div>
+                        <div class="gridData"></div>
+
+                        <div class="gridData"></div>
+                        <div class="gridData"></div>
+                        <div class="gridData"></div>
+
+                        <div class="gridData">
+
+                        </div>
+                        <div class="gridData"></div>
+                        <div class="gridData"></div>
+
+                        <div class="gridData"></div>
+                        <div class="gridData"></div>
+                        <div class="gridData"></div>
+
+                        <div class="gridData"></div>
+                        <div class="gridData"></div>
+                        <div class="gridData"></div>
+
+
+                    </div>
 
                     <br>
-
-                    
-                    <a href="/binaryHex">Binary Hex Info</a>
-                   
-                    <br>
-
-                    <?php
-                    if (session('puzzle') > 1) {
-                        echo "<s>";
-                    }
-                    ?>
-                    <a href="/assembler">Assembler Puzzle</a>
-                    <?php
-                    if (session('puzzle') >1) {
-                        echo "</s>";
-                    }
-                    ?>
-
-                    <br>
-
-                    <?php
-                    if (session('puzzle') > 2) {
-                        echo "<s>";
-                    }
-                    ?>
-                    <a href="/cInfo">C Info</a>
-                    <?php
-                    if (session('puzzle') >2) {
-                        echo "</s>";
-                    }
-                    ?>
-
-                    <br>
-
-                    <?php
-                    if (session('puzzle') > 2) {
-                        echo "<s>";
-                    }
-                    ?>
-                    <a href="/c">C Puzzle</a>
-                    <?php
-                    if (session('puzzle') >2) {
-                        echo "</s>";
-                    }
-                    ?>
-
-                    <br>
-
-                    <?php
-                    if (session('puzzle') == 4) {
-                        echo "<s>";
-                    }
-                    ?>
-                    <a href="/javaInfo">Java Info</a>
-                    <?php
-                    if (session('puzzle') ==4) {
-                        echo "</s>";
-                    }
-                    ?>
-
-                    <br>
-
-                    <?php
-                    if (session('puzzle')== 4) {
-                        echo "<s>";
-                    }
-                    ?>
-                    <a href="/java">Java Puzzle</a>
-                    <?php
-                    if (session('puzzle') ==4) {
-                        echo "</s>";
-                    }
-                    ?>
-
-                    <br>
-
-                    <a href="/decomp">Decompisition</a>
-                    <br>
-                    <a href="/jvsc">Java vs C</a>
                     <br>
                     <h1>Unlock Code</h1>
                     <?php
