@@ -117,7 +117,7 @@ class HomeController extends Controller
         }
 
         if ($input2 == "D"||$input2 == "d") {
-           
+
             if (session('puzzle') == 1) {
                 session()->put('puzzle', 2);
             }
@@ -134,7 +134,7 @@ class HomeController extends Controller
         $input2 =  $_POST["inputvalue2"];
 
         if ($input == "14") {
-            $result['response1'] = "well u know how to go from one page to another following instructions ,well done";
+            $result['response1'] = "well You know how to go from one page to another following instructions ,well done";
         } else {
             $result['response1'] = "can you not even follow simple instructions ?";
         }
@@ -143,7 +143,7 @@ class HomeController extends Controller
             if (session('puzzle') == 2) {
                 session()->put('puzzle', 3);
             }
-            return view('home')->with('result', 'Looks like your beginning to c clearly ,im impressed maybe you do understand');
+            return view('home')->with('result', 'Looks like your beginning to c clearly ,Im impressed maybe you do understand');
         } else {
             $result['response2'] = "Are you wearing your glasses ? you will have to learn to c memory clearly for this one";
         }
@@ -158,9 +158,9 @@ class HomeController extends Controller
             if (session('puzzle') == 3) {
                 session()->put('puzzle', 4);
             }
-            return view('home')->with('result', 'Objectivley you have done it but im not happy about it. Fine its over this is the code to unlock the Website');
+            return view('home')->with('result', 'Objectively you have done it but im not happy about it. Fine its over this is the code to unlock the Website');
         } else {
-            $result['response1'] = "Objectivley your wrong very very wrong and you wer so close as well ,times running out";
+            $result['response1'] = "Objectively your wrong very very wrong and you were so close as well ,times running out";
         }
 
         if ($input2 == "0x1B") {
@@ -190,6 +190,6 @@ class HomeController extends Controller
             ['Email' =>$input2 , 'Date' => $date, 'Comment' => $input]
         );
         return view('home');
-        
+
     }
 }

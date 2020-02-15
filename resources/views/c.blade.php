@@ -12,6 +12,9 @@ pre > code {
     padding: 1rem;
     word-wrap: normal;
 }
+li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
+     list-style-type: decimal !important;
+}
 
     .cMemory {
         width: 50%;
@@ -119,6 +122,7 @@ pre > code {
 
                     </div>
                     <div class="code">
+                        <?php echo Form::open(array('route' => 'cPA'));?>
                         <pre class="prettyprint linenums">
                         <code>
                 #include stdio.h
@@ -130,8 +134,8 @@ pre > code {
                         int x;
                         int *ptr2;
                         y=10;
-                        <?php echo Form::open(array('route' => 'cPA'));?>
-                        x=<?php echo Form::text('inputvalue1'); ?>;<div id="response">{{ $result['response1'] ?? '' }}</div>
+
+                        x=<?php echo Form::text('inputvalue1');?>;<div id="response">{{ $result['response1'] ?? '' }}</div>
 
                         ptr= (int*)malloc(n * sizeof(int));
 
@@ -143,6 +147,8 @@ pre > code {
 
                 }
 
+            </code>
+        </pre>
                               What is the content of *ptr2 ?
                             <?php
                             echo Form::text('inputvalue2');
@@ -152,8 +158,6 @@ pre > code {
                           <div id="response"> {{ $result['response2'] ?? '' }}   </div>
                     </div>
 
-</code>
-</pre>
                 </div>
             </div>
         </div>

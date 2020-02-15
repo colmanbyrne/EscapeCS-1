@@ -12,6 +12,9 @@ pre > code {
     padding: 1rem;
     word-wrap: normal;
 }
+li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
+     list-style-type: decimal !important;
+}
 
 #response{
   color: blueviolet
