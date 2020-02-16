@@ -37,7 +37,7 @@ float: right}
                             <h1>Binary Hexadecimal</h1>
                             <img src="img\Hexadecimal-and-Binary-Number-System-Representation.jpg" width="400" alt="">
                             <br><br><br>
-                            Decimal to Hexadecimal convert: <br>Enter Decimal number
+                            Decimal <-> Hexadecimal converter: <br>Enter Hex(0x??) or Decimal number:
                             <input type="text" id="num"><input type="button" value="convert" onclick="conv()">
                             <div id="conved"></div>
                         </div>
