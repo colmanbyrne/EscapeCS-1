@@ -70,7 +70,7 @@
                                 echo "<s>";
                                 }
                             ?>
-                            <a href="/java">Java Puzzle</a>
+                            <a href="/java">Java Program</a>
                             <?php
                                 if (session('puzzle') ==4) {
                                 echo "</s>";
@@ -130,7 +130,7 @@
                                 echo "<s>";
                             }
                             ?>
-                            <a href="/assembler">Assembler Puzzle</a>
+                            <a href="/assembler">Assembler Program</a>
                             <?php
                             if (session('puzzle') >1) {
                                 echo "</s>";
@@ -144,7 +144,7 @@
                             echo "<s>";
                             }
                             ?>
-                            <a href="/c">C Puzzle</a>
+                            <a href="/c">C Program</a>
                             <?php
                             if (session('puzzle') >2) {
                             echo "</s>";
@@ -181,7 +181,7 @@
                             }
                             ?>
 
-                            <a href="/logicP">Logic Puzzle</a>
+                            <a href="/logicP">Logic </a>
                             <?php
                             if (session('puzzle') != 0) {
                                 echo "</s>";
@@ -212,23 +212,21 @@
 
                     </div>
 
-                    <br>
-                    <br>
-                    <h1>Unlock Code</h1>
-                    <?php
-                    echo Form::open(array('route' => 'final')); ?>
 
-                    <?php echo Form::text('inputvalue1');
-                    echo Form::text('inputvalue2');
-                    echo Form::text('inputvalue3');
-
-
-                    echo Form::submit('Click Me!');
-
-                    echo Form::close()
-                    ?>
 
                 </div>
+                <div>
+                <h1 class="text-center" >Unlock Code</h1>
+                <?php echo Form::open(array('route' => 'final')); ?>
+                <div class="d-flex justify-content-center">
+                <div><?php echo Form::text('inputvalue1');?></div>
+                <div><?php echo Form::text('inputvalue2');?></div>
+                <div><?php echo Form::text('inputvalue3');?></div>
+                <div><?php echo Form::submit('Click Me!');?></div>
+                </div>
+
+                    <?php  echo Form::close()?>
+                    </div>
             </div>
         </div>
     </div>
