@@ -7,7 +7,7 @@ float: right}
 <script>
     function conv() {
     var num = document.querySelector('#num').value;
-var conved = document.querySelector('#conved');
+    var conved = document.querySelector('#conved');
     if (/x/i.test(num)) {
         var dec = parseInt(num, 16);
         conved.innerHTML = "Decimal: " + dec;
@@ -37,8 +37,8 @@ var conved = document.querySelector('#conved');
                             <h1>Binary Hexadecimal</h1>
                             <img src="img\Hexadecimal-and-Binary-Number-System-Representation.jpg" width="400" alt="">
                             <br><br><br>
-                            Decimal to HexaDecimal convert: <br>Enter Decimal number
-                            <input type="text" id="num"> <input type="button" value="convert" onclick="conv()">
+                            Decimal to Hexadecimal convert: <br>Enter Decimal number
+                            <input type="text" id="num"><input type="button" value="convert" onclick="conv()">
                             <div id="conved"></div>
                         </div>
 
@@ -71,7 +71,7 @@ var conved = document.querySelector('#conved');
 
                                     <li style="padding-top:10px">Hexadecimal Numbers is a more complex system than using just binary or decimal and is mainly used when dealing with computers and memory address locations. By dividing a binary number up into groups of 4 bits, each group or set of 4 digits can now have a possible value of between “0000” (0) and “1111” ( 8+4+2+1 = 15 ) giving a total of 16 different number combinations from 0 to 15. Don’t forget that “0” is also a valid digit.</li>
 
-                                    <li style="padding-top:20px">In programming , to indicate that a number is a Hexadecimal number rather than a decimal number it is often written in the format '0x??' -> 0x0f is decimal 15. </li>
+                                    <li style="padding-top:20px"><strong>In programming , to indicate that a number is a Hexadecimal number rather than a decimal number it is often written in the format '0x??' -> 0x0f is decimal 15.</strong> </li>
 
 
                             </div>
