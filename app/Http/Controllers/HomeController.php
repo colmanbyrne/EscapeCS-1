@@ -85,6 +85,10 @@ class HomeController extends Controller
     {
         return view('javaInfo');
     }
+    public function levels()
+    {
+        return view('levels');
+    }
     public function logicPA()
     {
 

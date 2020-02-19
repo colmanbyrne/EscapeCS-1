@@ -201,12 +201,12 @@
                         <div class="gridData"></div>
                         <div class="gridData"></div>
 
-                        <div class="gridData"> <a href="/levels">Levels </a></div>
+                        <div class="gridData"> </div>
                         <div class="gridData"></div>
                         <div class="gridData"></div>
 
                         <div class="gridData"></div>
-                        <div class="gridData"></div>
+                        <div class="gridData"><a href="/levels">Levels </a></div>
                         <div class="gridData"></div>
 
 
