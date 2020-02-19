@@ -104,7 +104,7 @@ li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
                         <div class="gridData">x</div>
 
                         <div class="gridData">0x067</div>
-                        <div class="gridData">0x0A</div>
+                        <div class="gridData">0xb</div>
                         <div class="gridData">y</div>
 
                         <div class="gridData">0x066</div>
@@ -133,7 +133,7 @@ li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
                         int y;
                         int x;
                         int *ptr2;
-                        y=10;
+                        y=11;
 
                         x=<?php echo Form::text('inputvalue1');?>;<div id="response"><span class="nocode"> {{ $result['response1'] ?? '' }}</span></div>
 

@@ -137,7 +137,7 @@ class HomeController extends Controller
         $input =  $_POST["inputvalue1"];
         $input2 =  $_POST["inputvalue2"];
 
-        if ($input == "14") {
+        if ($input == "13") {
             $result['response1'] = "well You know how to go from one page to another following instructions ,well done";
         } else {
             $result['response1'] = "can you not even follow simple instructions ?";
