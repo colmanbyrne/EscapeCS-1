@@ -3,7 +3,7 @@
 .gridTable2{
 
  display: grid;
- grid-template-columns:10% 10% 10% ;
+ grid-template-columns:10% 10%  ;
  grid-template-rows:auto ;
 
 }

@@ -139,7 +139,7 @@ class HomeController extends Controller
             $result['response1'] = "can you not even follow simple instructions ?";
         }
 
-        if ($input2 == "0x1B") {
+        if ($input2 == "0x1B"||$input2 == "0x1b") {
             if (session('puzzle') == 2) {
                 session()->put('puzzle', 3);
             }
@@ -163,7 +163,7 @@ class HomeController extends Controller
             $result['response1'] = "Objectively your wrong very very wrong and you were so close as well ,times running out";
         }
 
-        if ($input2 == "0x1B") {
+        if ($input2 == "0x1B"||$input2 == "0x1b") {
             $result['response2'] = "Ok you can c but can you be objective enough to get to the end";
         } else {
             $result['response2'] = "you will need to c the right answer before moving to this problem";

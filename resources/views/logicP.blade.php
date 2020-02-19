@@ -23,7 +23,7 @@ color: blueviolet
                     @endif
 
                     <h1>Logic P</h1>
-                    <img src="img\LogicP\SVG\Asset 1.svg" alt="">
+                    <img src="img\Asset 3.svg" alt="">
                     <div class="io">
                     <div id="response">  {{ $result ?? '' }}</div>
                     <?php
