@@ -23,6 +23,7 @@ Route::get('/binaryHex', 'HomeController@binaryHex')->name('binaryHex');
 Route::get('/assembler', 'HomeController@assembler')->name('assembler');
 Route::get('/decomp', 'HomeController@decomp')->name('decomp');
 Route::get('/jvsc', 'HomeController@jvsc')->name('jvsc');
+Route::get('/levels', 'HomeController@levels')->name('levels');
 Route::get('/c', 'HomeController@c')->name('c');
 Route::get('/cInfo', 'HomeController@cInfo')->name('cInfo');
 Route::get('/javaInfo', 'HomeController@javaInfo')->name('javaInfo');

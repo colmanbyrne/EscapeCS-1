@@ -33,8 +33,8 @@
                     </div>
                     @endif
                     <h2>This website is a hostage</h2>
-                    <p style="font-size:18px;">Programmers fail to appreciate how lucky they are standing on the shoulders of giants, men who coded every step in their programmes.</p>
-                    <p style="font-size:18px;">You have no idea how easy it is for you now memory allocation stackoverflows ha your greatest worry is incorporating cheats to speed up "productivity". </p>
+                    <p style="font-size:18px;">Programmers fail to appreciate how lucky they are, standing on the shoulders of giants, men who coded every step in their programmes.</p>
+                    <p style="font-size:18px;">You have no idea how easy it is for you now, memory allocation, stackoverflows ,ha your greatest worry is incorporating cheats to speed up "productivity". </p>
                     <p style="font-size:18px;">Ineffecient mindless saps learn your past to move forward. You will have to look back to move on.</p>
 
                     <div id="response"> {{ $result ?? '' }}</div>
@@ -201,7 +201,7 @@
                         <div class="gridData"></div>
                         <div class="gridData"></div>
 
-                        <div class="gridData"></div>
+                        <div class="gridData"> <a href="/levels">Levels </a></div>
                         <div class="gridData"></div>
                         <div class="gridData"></div>
 
