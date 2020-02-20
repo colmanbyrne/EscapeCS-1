@@ -94,13 +94,22 @@ public class Animal {
 
     public void Random(String input){
         switch (input) {
-            case "0x1b":
+            case "27":
                  age = 250;
                 break;
-            case "0x34":
+            case "45":
                  age = 4000;
                 break;
-            default:
+            case "25":
+                 age = 102;
+                break;
+            case "33":
+                 age = 120;
+                break;
+            case "80":
+                 age = 111;
+                break;
+            
         }
     }
 }

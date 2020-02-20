@@ -143,7 +143,7 @@ class HomeController extends Controller
             $result['response1'] = "can you not even follow simple instructions ?";
         }
 
-        if ($input2 == "0x1B"||$input2 == "0x1b"||$input2 == "27") {
+        if ($input2 == "27") {
             if (session('puzzle') == 2) {
                 session()->put('puzzle', 3);
             }
