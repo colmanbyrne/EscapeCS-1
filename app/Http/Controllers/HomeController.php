@@ -114,13 +114,13 @@ class HomeController extends Controller
             'response2' => ''
         ];
 
-        if ($input == "B") {
+        if (strtoupper ($input == "B")||strtoupper ( $input ) == "0XB"||strtoupper ( $input ) == "0X0B") {
             $result['response1'] = "Looks like your getting it others solved it faster are you sure this is for you ??";
         } else {
             $result['response1'] = "I dont know what your entering but it aint right , try using something logical";
         }
 
-        if ($input2 == "D"||$input2 == "d") {
+        if (strtoupper ( $input2 )=="D"||strtoupper ( $input2 ) == "0XD"||strtoupper ( $input2 ) == "0X0D") {
 
             if (session('puzzle') == 1) {
                 session()->put('puzzle', 2);
@@ -143,7 +143,7 @@ class HomeController extends Controller
             $result['response1'] = "can you not even follow simple instructions ?";
         }
 
-        if ($input2 == "0x1B"||$input2 == "0x1b") {
+        if ($input2 == "0x1B"||$input2 == "0x1b"||$input2 == "27") {
             if (session('puzzle') == 2) {
                 session()->put('puzzle', 3);
             }
