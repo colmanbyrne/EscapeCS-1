@@ -108,7 +108,7 @@ li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
                         <div class="gridData">y</div>
 
                         <div class="gridData">0x066</div>
-                        <div class="gridData">0x67</div>
+                        <div class="gridData">0x067</div>
                         <div class="gridData">ptr</div>
 
                         <div class="gridData">0x065</div>
