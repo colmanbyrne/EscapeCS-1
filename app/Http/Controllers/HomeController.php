@@ -37,7 +37,8 @@ class HomeController extends Controller
             session()->put('puzzle', 0);
         }
 
-        return view('home');
+        //return view('home');
+        return view('LogicPuzzle');
     }
     public function logicInfo()
     {
@@ -89,16 +90,31 @@ class HomeController extends Controller
     {
         return view('levels');
     }
+    // public function logicPA()
+    // {
+
+
+    //     $input =  $_POST["inputvalue1"];
+    //     if ($input == 1011) {
+    //         if (session('puzzle') == 0) {
+    //             session()->put('puzzle', 1);
+    //         }
+    //         return view('home')->with('result', 'Very logical ,you found the first step ,logically where to next?');
+    //     } else {
+
+    //         return view('logicP')->with('result', 'Ha not very logical are you, your gonna have to learn the basics first');
+    //     }
+    // }
     public function logicPA()
     {
 
-
+        //https://157b5eec-858e-4a65-801d-5af67c9a7c5f.mock.pstmn.io/solved
         $input =  $_POST["inputvalue1"];
         if ($input == 1011) {
-            if (session('puzzle') == 0) {
-                session()->put('puzzle', 1);
-            }
-            return view('home')->with('result', 'Very logical ,you found the first step ,logically where to next?');
+            $json = json_decode(file_get_contents('https://157b5eec-858e-4a65-801d-5af67c9a7c5f.mock.pstmn.io/solved'), true);
+            error_log(var_dump($json));
+
+            return view('logicP')->with('result', 'Very logical ,youv done it well done, check the lock now');
         } else {
 
             return view('logicP')->with('result', 'Ha not very logical are you, your gonna have to learn the basics first');
