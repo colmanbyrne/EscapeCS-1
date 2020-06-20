@@ -120,6 +120,7 @@ class HomeController extends Controller
             return view('logicP')->with('result', 'Ha not very logical are you, your gonna have to learn the basics first');
         }
     }
+    
     public function assemblerPA()
     {
 
