@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use Mqtt;
 
 class HomeController extends Controller
 {
@@ -110,17 +111,42 @@ class HomeController extends Controller
 
         //https://157b5eec-858e-4a65-801d-5af67c9a7c5f.mock.pstmn.io/solved
         $input =  $_POST["inputvalue1"];
+
+        $mqtt = new Mqtt();
         if ($input == 1011) {
-            $json = json_decode(file_get_contents('https://157b5eec-858e-4a65-801d-5af67c9a7c5f.mock.pstmn.io/solved'), true);
-            error_log(var_dump($json));
+
+            //$json = json_decode(file_get_contents('https://157b5eec-858e-4a65-801d-5af67c9a7c5f.mock.pstmn.io/solved'), true);
+            //error_log(var_dump($json));
+
+
+
+            $topic='LIT/PuzzleLock';
+            $message='Unlock';
+            $output = Mqtt::ConnectAndPublish($topic, $message);
+
+            if ($output === true)
+            {
+                error_log("published");
+            }
+               error_log("Failed");
+
 
             return view('logicP')->with('result', 'Very logical ,youv done it well done, check the lock now');
         } else {
+            $topic='LIT/PuzzleLock';
+            $message='Lock';
+            $output = Mqtt::ConnectAndPublish($topic, $message);
 
-            return view('logicP')->with('result', 'Ha not very logical are you, your gonna have to learn the basics first');
+            if ($output === true)
+            {
+                error_log("published");
+            }
+               error_log("Failed");
+
+               return view('logicP')->with('result', 'Ha not very logical are you, your gonna have to learn the basics first');
         }
     }
-    
+
     public function assemblerPA()
     {
 

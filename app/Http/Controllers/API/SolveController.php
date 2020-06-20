@@ -4,6 +4,10 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Session;
+
+
+
 
 class SolveController extends Controller
 {
@@ -15,7 +19,14 @@ class SolveController extends Controller
     public function index()
     {
         header("Content-Type:application/json");
-        $response['solved'] = 0;
+
+        // Add session variable to communicate form puzzle page
+        //and change response based on it
+
+
+        $solvedstatus = session::get('solvedvariable', '0');
+
+        $response['solved'] = $solvedstatus;
 
         $json_response = json_encode($response);
         echo $json_response;
