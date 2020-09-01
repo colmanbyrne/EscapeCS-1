@@ -37,7 +37,7 @@ color: blueviolet
 
                     Machine Code is one level above Binary, and is the fastest method to execute a software program. All programs are translated by compilers to machine code before execution. All computers have state machine cores which have Accumulators, which is where the main mathematics takes place when doing calculations
                     some are significantly more complex than others.
-                    The software is written in a language called Assembler , using memonics for the state machine operations as well as hexadeciaml for binary digits .<br>
+                    The software is written in a language called Assembler , using memonics for the state machine operations as well as hexadecimal for binary digits .<br>
 
                     <a class="btn btn-primary" href="/instructionset" role="button">Machine code Instruction Set</a>
 

@@ -38,8 +38,8 @@ class HomeController extends Controller
             session()->put('puzzle', 0);
         }
 
-        //return view('home');
-        return view('LogicPuzzle');
+        return view('home');
+        //return view('LogicPuzzle');
     }
     public function logicInfo()
     {
@@ -91,22 +91,22 @@ class HomeController extends Controller
     {
         return view('levels');
     }
-    // public function logicPA()
-    // {
-
-
-    //     $input =  $_POST["inputvalue1"];
-    //     if ($input == 1011) {
-    //         if (session('puzzle') == 0) {
-    //             session()->put('puzzle', 1);
-    //         }
-    //         return view('home')->with('result', 'Very logical ,you found the first step ,logically where to next?');
-    //     } else {
-
-    //         return view('logicP')->with('result', 'Ha not very logical are you, your gonna have to learn the basics first');
-    //     }
-    // }
     public function logicPA()
+     {
+
+
+         $input =  $_POST["inputvalue1"];
+         if ($input == 1011) {
+             if (session('puzzle') == 0) {
+                 session()->put('puzzle', 1);
+             }
+             return view('home')->with('result', 'Very logical ,you found the first step ,maybe try assembling some brains and we can move onto the next step?');
+         } else {
+
+             return view('logicP')->with('result', 'Ha not very logical are you, your gonna have to learn the basics first');
+         }
+     }
+   /*  public function logicPA()
     {
 
         //https://157b5eec-858e-4a65-801d-5af67c9a7c5f.mock.pstmn.io/solved
@@ -145,7 +145,7 @@ class HomeController extends Controller
 
                return view('logicP')->with('result', 'Ha not very logical are you, your gonna have to learn the basics first');
         }
-    }
+    } */
 
     public function assemblerPA()
     {
@@ -158,8 +158,11 @@ class HomeController extends Controller
         ];
 
         if (strtoupper ($input) == "B"||strtoupper ( $input ) == "0XB"||strtoupper ( $input ) == "0X0B") {
-            $result['response1'] = "Looks like your getting it others solved it faster are you sure this is for you ??";
-        } else {
+            $result['response1'] = "Thats correct ,could you B slower ?";
+        }elseif (strtoupper ($input) == "1011") {
+            $result['response1'] = "so close, but we dont deal in binary anymore, we only speak in 16s these days";
+        }
+         else {
             $result['response1'] = "I dont know what your entering but it aint right , try using something logical";
         }
 

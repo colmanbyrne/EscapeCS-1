@@ -33,10 +33,12 @@
                     </div>
                     @endif
                     <h2>This website is a hostage</h2>
-                    <p style="font-size:18px;">Programmers fail to appreciate how lucky they are, standing on the shoulders of giants, men who coded every step in their programmes.</p>
-                    <p style="font-size:18px;">You have no idea how easy it is for you now, memory allocation, stackoverflows ,ha your greatest worry is incorporating cheats to speed up "productivity". </p>
-                    <p style="font-size:18px;">Ineffecient mindless saps learn your past to move forward. You will have to look back to move on.</p>
+                    <p style="font-size:15px;">Programmers fail to appreciate how lucky they are, standing on the shoulders of giants, men who coded every single step in their programmes.</p>
+                    <p style="font-size:15px;">You have no idea how easy it is for you now, memory allocation, stackoverflows ,ha your greatest worry is incorporating cheats to speed up "productivity". </p>
+                    <p style="font-size:15px;">Learn your past to move forward. You will have to look back to move on.</p>
 
+                    <p style="font-size:18px; color: red;">You will have to solve a series of interlinked clues to learn about different programming methods over the years</p>
+                    <p style="font-size:18px;color: red;">Start from the start, Logic</p>
                     <div id="response"> {{ $result ?? '' }}</div>
                     <!--
                     <br>
@@ -47,17 +49,7 @@
                     <div class="cMemory">
                         <div class="gridData"></div>
                         <div class="gridData">
-                            <?php
-                            if (session('puzzle') != 0) {
-                            echo "<s>";
-                            }
-                            ?>
-                            <a href="/logicInfo">Logic Info</a>
-                            <?php
-                            if (session('puzzle') != 0) {
-                            echo "</s>";
-                            }
-                            ?>
+                          
 
                         </div>
                         <div class="gridData"></div>
