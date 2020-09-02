@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 14, 2020 at 11:35 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.1
+-- Generation Time: Sep 02, 2020 at 09:07 PM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.4.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -390,15 +389,35 @@ INSERT INTO `config` (`collection`, `name`, `data`) VALUES
 CREATE TABLE `feedback` (
   `Email` varchar(255) NOT NULL,
   `Date` varchar(255) NOT NULL,
-  `Comment` varchar(600) NOT NULL
+  `Comment` varchar(600) NOT NULL,
+  `Gender` varchar(255) NOT NULL,
+  `Age` varchar(255) NOT NULL,
+  `SchoolLevel` varchar(255) NOT NULL,
+  `Country` varchar(255) NOT NULL,
+  `Subject` varchar(255) NOT NULL,
+  `q1` int(11) NOT NULL,
+  `q2` int(11) NOT NULL,
+  `q3` int(11) NOT NULL,
+  `q4` int(11) NOT NULL,
+  `q5` int(11) NOT NULL,
+  `q6` int(11) NOT NULL,
+  `q7` int(11) NOT NULL,
+  `q8` int(11) NOT NULL,
+  `q9` int(11) NOT NULL,
+  `q10` int(11) NOT NULL,
+  `q11` int(11) NOT NULL,
+  `q12` int(11) NOT NULL,
+  `q13` int(11) NOT NULL,
+  `q14` int(11) NOT NULL,
+  `q15` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `feedback`
 --
 
-INSERT INTO `feedback` (`Email`, `Date`, `Comment`) VALUES
-('DavidByrneit@gmail.com', '2020-02-14 21:38:27', 'its to hard');
+INSERT INTO `feedback` (`Email`, `Date`, `Comment`, `Gender`, `Age`, `SchoolLevel`, `Country`, `Subject`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`, `q7`, `q8`, `q9`, `q10`, `q11`, `q12`, `q13`, `q14`, `q15`) VALUES
+('davidbyrneit@gmail.com', '2020-09-02 19:01:39', 'sdfsd', 'M', '27', '3rd level', 'ireland', 'computer science', 2, 2, 2, 1, 1, 1, 1, 1, 1, 3, 1, 1, 4, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -743,8 +762,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `updated_at`, `created_at`, `remember_token`, `started`) VALUES
-(2, 'David', 'davidbyrneit@gmail.com', '$2y$10$cEawkLSpyFnYaXkLCxT.xukoBGfT5TVX3tmsXfsOyddWkjVCHjy0G', '2020-01-23 00:25:24', '2020-01-23 00:25:24', NULL, '2020-01-24 11:29:21'),
-(3, 'bla', 'david.byrne@lit.ie', '$2y$10$dB7aOKSKcpVK4t/Ir8BdluoVDszhiz9QFlv2/8tZRw0JTilMif4w6', '2020-02-08 17:58:37', '2020-02-08 17:58:37', NULL, NULL);
+(4, 'David', 'davidbyrneit@gmail.com', '$2y$10$zHU6Iv7bRr.P2caSTU1Db.stL8jVaPA1clDKFj3eoDcsPaTxDJ9yS', '2020-06-18 19:56:37', '2020-06-18 19:56:37', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -865,6 +883,12 @@ ALTER TABLE `config`
   ADD PRIMARY KEY (`collection`,`name`);
 
 --
+-- Indexes for table `feedback`
+--
+ALTER TABLE `feedback`
+  ADD PRIMARY KEY (`Email`);
+
+--
 -- Indexes for table `key_value`
 --
 ALTER TABLE `key_value`
@@ -971,7 +995,7 @@ ALTER TABLE `sequences`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
