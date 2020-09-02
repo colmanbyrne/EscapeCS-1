@@ -19,8 +19,7 @@
                    <p> I do think we need to have a better understanding in our past ,we are losing skills that are still needed today ,what will you do when you cheats and librarys fail you.</p>
                    <p> What if OS systems stop working or shut you out.The old ways will always work and they will make you a better programmer.</p>
 
-                   <p> But then i also see this </p>
-                    //////////////////////////
+                  
 
                    <p> Maybe there is hope if we can make it accessible to everyone maybe more will participate.</p>
                     

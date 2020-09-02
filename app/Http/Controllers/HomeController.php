@@ -208,12 +208,12 @@ class HomeController extends Controller
             if (session('puzzle') == 3) {
                 session()->put('puzzle', 4);
             }
-            return view('home')->with('result', 'Objectively you have done it but im not happy about it. Fine its over this is the code to unlock the Website');
+            return view('home')->with('result', 'Objectively you have done it but im not happy about it. Fine its over this is the code to unlock the Website 2 5 6');
         } else {
             $result['response1'] = "Objectively your wrong very very wrong and you were so close as well ,times running out";
         }
 
-        if ($input2 == "0x1B"||$input2 == "0x1b") {
+        if ($input2 == "0x1B"||$input2 == "0x1b"||$input2 == "27") {
             $result['response2'] = "Ok you can c but can you be objective enough to get to the end";
         } else {
             $result['response2'] = "you will need to c the right answer before moving to this problem";
@@ -229,6 +229,9 @@ class HomeController extends Controller
 
         if ($input == "2" && $input2 == "5" && $input3 == "6") {
             return view('final');
+        }
+        else{
+            return view('home')->with('result', 'Nope, stop guessing');  
         }
     }
     public function feedback()
