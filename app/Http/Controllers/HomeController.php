@@ -166,12 +166,12 @@ class HomeController extends Controller
             $result['response1'] = "I dont know what your entering but it aint right , try using something logical";
         }
 
-        if (strtoupper ( $input2 )=="D"||strtoupper ( $input2 ) == "0XD"||strtoupper ( $input2 ) == "0X0D") {
+        if (strtoupper ( $input2 )=="D"||strtoupper ( $input2 ) == "0XD"||strtoupper ( $input2 ) == "0X0D"||strtoupper ( $input2 ) == "13") {
 
             if (session('puzzle') == 1) {
                 session()->put('puzzle', 2);
             }
-            return view('home')->with('result', 'Boom!!! well done that was a tough one im suprised');
+            return view('home')->with('result', 'Boom!!! well done that was a tough one im suprised,Your beginning to C more clearly');
         } else {
             $result['response2'] = "Do you really understand this ?? I left instructions laying around somewhere.";
         }
@@ -186,7 +186,7 @@ class HomeController extends Controller
         if ($input == "13") {
             $result['response1'] = "well You know how to go from one page to another following instructions ,well done";
         } else {
-            $result['response1'] = "can you not even follow simple instructions ?";
+            $result['response1'] = "can you not even assemble some simple instructions ?";
         }
 
         if ($input2 == "27") {

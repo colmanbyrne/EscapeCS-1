@@ -37,8 +37,29 @@ color: blueviolet
 
                     Machine Code is one level above Binary, and is the fastest method to execute a software program. All programs are translated by compilers to machine code before execution. All computers have state machine cores which have Accumulators, which is where the main mathematics takes place when doing calculations
                     some are significantly more complex than others.
-                    The software is written in a language called Assembler , using memonics for the state machine operations as well as hexadecimal for binary digits .<br>
+                    The software is written in a language called Assembler , using memonics for the machine operations and hexadecimal for numbers.<br>
 
                     <a class="btn btn-primary" href="/instructionset" role="button">Machine code Instruction Set</a>
-
+                    <table class="table" id="maxitable"><colgroup><col /><col /><col /><col /><col /><col /><col /><col /><col /><col /><col /><col /><col /><col /></colgroup>
+<tbody>
+<tr>
+<td rowspan="2">LDA</td>
+<td>LDA A #data</td>
+<td rowspan="2">Load Accumulator from Memory Ex: LDA A #$25 loads the number (25)H into accumulator A</td>
+</tr>
+<tr>
+<td>LDA B #data</td>
+</tr>
+<tr>
+<td rowspan="1">ABA</td>
+<td>[A] &larr; [A] + [B]</td>
+<td rowspan="1">Add B to A</td>
+</tr>
+<tr>
+<td rowspan="2">STA</td>
+<td>[address] &larr; [A]</td>
+<td rowspan="2">Store Accumulator in Memory</td>
+</tr>
+</tbody>
+</table>
                     @endsection
