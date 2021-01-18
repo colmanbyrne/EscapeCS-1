@@ -38,8 +38,8 @@ class HomeController extends Controller
             session()->put('puzzle', 0);
         }
 
-        return view('home');
-        //return view('LogicPuzzle');
+       // return view('home');
+        return view('LogicPuzzle');
     }
     public function logicInfo()
     {
@@ -91,7 +91,7 @@ class HomeController extends Controller
     {
         return view('levels');
     }
-    public function logicPA()
+   /*  public function logicPA()
      {
 
 
@@ -105,8 +105,8 @@ class HomeController extends Controller
 
              return view('logicP')->with('result', 'Ha not very logical are you, your gonna have to learn the basics first');
          }
-     }
-   /*  public function logicPA()
+     } */
+    public function logicPA()
     {
 
         //https://157b5eec-858e-4a65-801d-5af67c9a7c5f.mock.pstmn.io/solved
@@ -145,7 +145,7 @@ class HomeController extends Controller
 
                return view('logicP')->with('result', 'Ha not very logical are you, your gonna have to learn the basics first');
         }
-    } */
+    }
 
     public function assemblerPA()
     {
